@@ -33,10 +33,14 @@ git push -u origin main
 
 ## 3. Turn on GitHub Pages
 
+This site's `.github/workflows/deploy.yml` builds the site and **pushes the result to a `gh-pages` branch** (via the `JamesIves/github-pages-deploy-action`). So Pages must serve **from that branch** — *not* from "GitHub Actions".
+
 1. In your new repo on GitHub: **Settings → Pages**.
-2. Under **Build and deployment → Source**, choose **GitHub Actions**.
-3. The included workflow `.github/workflows/deploy.yml` will run automatically on every push to `main`. The first build takes ~5 minutes.
-4. Watch progress under the **Actions** tab. When it finishes, your site is live at **https://jboateng1.github.io**.
+2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+3. Set **Branch** to `gh-pages` and the folder to `/ (root)`, then click **Save**.
+   - Note: the `gh-pages` branch only appears *after* the deploy workflow has run successfully at least once. If you don't see it yet, push to `main` first (next step) and come back.
+4. The workflow runs automatically on every push to `main`. The first build takes ~2 minutes, then Pages publishes within another minute or so.
+5. Watch progress under the **Actions** tab (the **Deploy site** run builds + pushes; the **pages build and deployment** run publishes). When both finish, your site is live at **https://jboateng1.github.io**.
 
 ## 4. Fill in the TODOs
 
