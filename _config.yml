@@ -13,7 +13,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text:
 keywords: Joshua Ofori Boateng, Open RAN, 5G, 6G, URLLC, wireless systems, OpenAirInterface, srsRAN, OCUDU, software-defined radio, ARA wireless living lab, Iowa State University
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: prof_pic.png # favicon image in /assets/img/ (or use an emoji ≤4 chars, e.g. 📶)
+icon: prof_pic.jpg # favicon image in /assets/img/ (must exist; or use an emoji ≤4 chars, e.g. 📶)
 
 url: https://jboateng1.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
