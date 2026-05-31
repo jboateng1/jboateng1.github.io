@@ -33,12 +33,12 @@ git push -u origin main
 
 ## 3. Turn on GitHub Pages
 
-This site's `.github/workflows/deploy.yml` builds the site and **pushes the result to a `gh-pages` branch** (via the `JamesIves/github-pages-deploy-action`). So Pages must serve **from that branch** — *not* from "GitHub Actions".
+This site's `.github/workflows/deploy.yml` builds the site and **pushes the result to a `gh-pages` branch** (via the `JamesIves/github-pages-deploy-action`). So Pages must serve **from that branch** — _not_ from "GitHub Actions".
 
 1. In your new repo on GitHub: **Settings → Pages**.
 2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
 3. Set **Branch** to `gh-pages` and the folder to `/ (root)`, then click **Save**.
-   - Note: the `gh-pages` branch only appears *after* the deploy workflow has run successfully at least once. If you don't see it yet, push to `main` first (next step) and come back.
+   - Note: the `gh-pages` branch only appears _after_ the deploy workflow has run successfully at least once. If you don't see it yet, push to `main` first (next step) and come back.
 4. The workflow runs automatically on every push to `main`. The first build takes ~2 minutes, then Pages publishes within another minute or so.
 5. Watch progress under the **Actions** tab (the **Deploy site** run builds + pushes; the **pages build and deployment** run publishes). When both finish, your site is live at **https://jboateng1.github.io**.
 
@@ -46,12 +46,12 @@ This site's `.github/workflows/deploy.yml` builds the site and **pushes the resu
 
 A few values were left as placeholders so you can paste in the right ones:
 
-| File | What to replace |
-|---|---|
-| `_data/socials.yml` | `scholar_userid` — copy from your Google Scholar URL (`https://scholar.google.com/citations?user=XXXXXX`) |
-| `_data/socials.yml` | `orcid_id` — paste your ORCID iD (`0000-0000-0000-0000`) |
-| `_data/socials.yml` | `gitlab_username` — your actual GitLab handle |
-| `_data/repositories.yml` | Add any of your personal/research repos under `github_repos:` |
+| File                     | What to replace                                                                                           |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| `_data/socials.yml`      | `scholar_userid` — copy from your Google Scholar URL (`https://scholar.google.com/citations?user=XXXXXX`) |
+| `_data/socials.yml`      | `orcid_id` — paste your ORCID iD (`0000-0000-0000-0000`)                                                  |
+| `_data/socials.yml`      | `gitlab_username` — your actual GitLab handle                                                             |
+| `_data/repositories.yml` | Add any of your personal/research repos under `github_repos:`                                             |
 
 Commit and push — the site rebuilds automatically.
 
@@ -66,7 +66,7 @@ If you want `joshuaoforiboateng.com` instead of `jboateng1.github.io`:
 
 ## 6. Previewing locally (optional but useful)
 
-You don't *need* this to deploy — GitHub Pages builds for you. But to preview locally before pushing:
+You don't _need_ this to deploy — GitHub Pages builds for you. But to preview locally before pushing:
 
 ```bash
 # One-time setup (Ubuntu/Debian):
@@ -88,14 +88,14 @@ docker compose -f docker-compose-slim.yml up
 
 ## 7. Updating content as your career evolves
 
-| You want to... | Edit this |
-|---|---|
-| Add a news item (talk, award, paper) | Create a new file in `_news/YYYY-MM-DD-slug.md` |
-| Add a publication | Append a BibTeX entry to `_bibliography/papers.bib`. Use `selected = {true}` to feature it on the home page, `award = {true}` to mark a best paper. |
-| Add a project | New file in `_projects/N_slug.md` |
-| Update CV | Replace `assets/pdf/Joshua_Ofori_Boateng_CV.pdf` |
-| Change your bio | Edit `_pages/about.md` |
-| Change colors / theme | `_config.yml` and the al-folio theme docs |
+| You want to...                       | Edit this                                                                                                                                           |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Add a news item (talk, award, paper) | Create a new file in `_news/YYYY-MM-DD-slug.md`                                                                                                     |
+| Add a publication                    | Append a BibTeX entry to `_bibliography/papers.bib`. Use `selected = {true}` to feature it on the home page, `award = {true}` to mark a best paper. |
+| Add a project                        | New file in `_projects/N_slug.md`                                                                                                                   |
+| Update CV                            | Replace `assets/pdf/Joshua_Ofori_Boateng_CV.pdf`                                                                                                    |
+| Change your bio                      | Edit `_pages/about.md`                                                                                                                              |
+| Change colors / theme                | `_config.yml` and the al-folio theme docs                                                                                                           |
 
 Push to `main` → GitHub Actions rebuilds → site updates within ~5 minutes.
 
