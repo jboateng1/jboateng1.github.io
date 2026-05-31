@@ -1,0 +1,13 @@
+github_users:
+  - jboateng1
+
+repo_description_lines_max: 2
+
+# Repositories Joshua wants to highlight on the /repositories page.
+# Add or remove freely; use the canonical "owner/repo" form.
+github_repos:
+  - jboateng1/jboateng1.github.io
+  # Open-source stacks Joshua works with day-to-day:
+  - srsran/srsRAN_Project
+  - open-air-interface/openair5g          # mirror — primary lives on GitLab
+  - open5gs/open5gs

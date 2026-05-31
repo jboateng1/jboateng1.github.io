@@ -1,0 +1,20 @@
+# Socials for Joshua Ofori Boateng.
+# Add ORCID iD and Google Scholar ID once you have them.
+# See https://github.com/george-gca/jekyll-socials for supported keys.
+
+cv_pdf: /assets/pdf/Joshua_Ofori_Boateng_CV.pdf
+email: jboateng@iastate.edu
+work_email: jboateng@iastate.edu
+
+# Code / engineering
+github_username: jboateng1
+gitlab_username: jboateng1            # TODO: replace with your actual GitLab handle
+
+# Professional
+linkedin_username: joshua-ofori-boateng
+
+# Academic
+scholar_userid:                       # TODO: paste your Google Scholar user ID (the "user=" param)
+orcid_id:                             # TODO: paste your ORCID iD (e.g. 0000-0000-0000-0000)
+
+rss_icon: false
