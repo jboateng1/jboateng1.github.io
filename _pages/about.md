@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <strong>Research Assistant Professor</strong> &middot; <a href='https://www.ece.iastate.edu/'>Electrical &amp; Computer Engineering</a>, <a href='https://www.iastate.edu/'>Iowa State University</a> &middot; <em>Open and AI-native RAN &middot; 5G/6G &middot; Wireless Living Labs &middot; URLLC</em>
+subtitle: <em>Open and AI-native RAN &middot; 5G/6G &middot; Wireless Living Labs &middot; URLLC</em>
 
 profile:
   align: right
@@ -28,13 +28,6 @@ latest_posts:
 ---
 
 <style>
-  /* Give the page heading (your name) room to clear the fixed top navbar so
-     they no longer overlap. Increase this value to push the name further down. */
-  .profile,
-  .post .post-header {
-    margin-top: 2.7rem;
-  }
-
   /* Shrink the social icons at the bottom of the page to roughly match the
      small inline icons used elsewhere on the page. */
   .social .contact-icons,
@@ -44,9 +37,9 @@ latest_posts:
   }
 </style>
 
-I am a **Research Assistant Professor** in the Center for Wireless, Communities and Innovation ([WiCI](https://wici.iastate.edu/)) affiliated with the [Department of Electrical and Computer Engineering](https://www.ece.iastate.edu/) at **Iowa State University**. I build **open, reliable, and scalable next-generation wireless systems** — and the **living-lab infrastructure** needed to evaluate them under the challenging conditions of the real world.
+I am a **Research Assistant Professor** at the Center for Wireless, Communities and Innovation ([WiCI](https://wici.iastate.edu/)) affiliated with the [Department of Electrical and Computer Engineering](https://www.ece.iastate.edu/) at **Iowa State University**. I build **open, reliable, and scalable next-generation wireless systems** — and the **living-lab infrastructure** needed to evaluate them under the challenging conditions of the real world.
 
-My PhD dissertation, **_Toward Democratizing 5G: Enabling Open, Reliable and Scalable Wireless Systems for Use and Innovation_**, sits at the intersection of **wireless systems, networked infrastructure, and software engineering**. I lead the design and deployment of the [ARA Wireless Living Lab](https://arawireless.org/) — a large-scale, fully programmable 5G/Open-RAN testbed serving over **170 researchers** across the U.S. In 2024 I spent a semester at **Microsoft Research** building a GEO-based 5G non-terrestrial network testbed.
+My PhD dissertation, **_Toward Democratizing 5G: Enabling Open, Reliable and Scalable Wireless Systems for Use and Innovation_**, sits at the intersection of wireless systems, networked infrastructure, and software engineering. I lead the design and deployment of the [ARA Wireless Living Lab](https://arawireless.org/) — a large-scale, fully programmable 5G/Open-RAN testbed serving over **170 researchers** across the U.S. In 2024 I spent a semester at **Microsoft Research** building a GEO-based 5G non-terrestrial network testbed.
 
 My long-term vision is to _democratize next-generation wireless innovation_ — making 5G/6G accessible, affordable, and deployable for rural, agricultural, and underserved communities, beginning in Iowa and the broader Midwest.
 

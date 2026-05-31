@@ -80,7 +80,7 @@ al_folio:
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
+navbar_fixed: false # false = navbar sticks to the very top in normal flow (won't overlap headings); true = floats over content
 footer_fixed: true
 search_enabled: true
 socials_in_search: true

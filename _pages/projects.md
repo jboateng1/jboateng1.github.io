@@ -5,7 +5,7 @@ permalink: /projects/
 description: Programmable wireless living labs, dynamic spectrum sharing, and Open RAN — the at-scale platforms and consortia I help build and run.
 nav: true
 nav_order: 2
-display_categories: ["wireless living labs", "open ran"]
+display_categories: ["wireless living labs", "open ran", "dynamic spectrum sharing"]
 horizontal: false
 ---
 

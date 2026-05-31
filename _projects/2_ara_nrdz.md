@@ -3,8 +3,8 @@ layout: page
 title: ARA-NRDZ
 description: <i class="fa-solid fa-satellite-dish"></i>&nbsp; NSF National Radio Dynamic Zone — dynamic spectrum sharing for rural regions
 img: assets/img/nrdz.png
-importance: 2
-category: wireless living labs
+importance: 1
+category: dynamic spectrum sharing
 related_publications: false
 ---
 
