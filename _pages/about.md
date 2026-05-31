@@ -2,17 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <strong>PhD Candidate &middot; Systems Researcher</strong> &middot; <a href='https://www.ece.iastate.edu/'>Electrical &amp; Computer Engineering</a>, <a href='https://www.iastate.edu/'>Iowa State University</a> &middot; <em>Open RAN &middot; 5G/6G &middot; Wireless Living Labs &middot; URLLC</em>
+subtitle: <strong>Research Assistant Professor</strong> &middot; <a href='https://www.ece.iastate.edu/'>Electrical &amp; Computer Engineering</a>, <a href='https://www.iastate.edu/'>Iowa State University</a> &middot; <em>Open RAN &middot; 5G/6G &middot; Wireless Living Labs &middot; URLLC</em>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p><i class="fa-solid fa-location-dot"></i> 306 Durham Center</p>
+    <p><i class="fa-solid fa-location-dot"></i> 391C Durham Center</p>
     <p>613 Morrill Road, Ames, IA 50011</p>
     <p><i class="fa-solid fa-flask"></i> Center for Wireless, Communities &amp; Innovation (<a href='https://wici.iastate.edu/'>WiCI</a>)</p>
-    <p><i class="fa-solid fa-user-graduate"></i> Advisor: <a href='https://web.ece.iastate.edu/hongwei/'>Prof. Hongwei Zhang</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -28,11 +27,21 @@ latest_posts:
   limit: 3
 ---
 
-I am a PhD candidate in Computer Engineering at **Iowa State University**, advised by [Prof. Hongwei Zhang](https://web.ece.iastate.edu/hongwei/) in the [WiCI Center](https://wici.iastate.edu/). I build **open, programmable, and reliable next-generation wireless systems** — and the **living-lab infrastructure** needed to evaluate them under the messy conditions of the real world.
+<style>
+  /* Shrink the social icons at the bottom of the page to roughly match the
+     small inline icons used elsewhere on the page. */
+  .social .contact-icons,
+  .social .contact-icons a,
+  .social .contact-icons i {
+    font-size: 1.5rem;
+  }
+</style>
 
-My research sits at the intersection of **wireless systems, networked infrastructure, and software engineering**. I lead the design and deployment of the [**ARA Wireless Living Lab**](https://arawireless.org/) — a large-scale, fully programmable 5G/Open-RAN testbed serving over **170 researchers** across the U.S. — and I build systems on top of it: [**AraSDR**](https://ieeexplore.ieee.org/document/10623061) (end-to-end 5G prototyping), [**AraRACH**](https://arxiv.org/abs/2503.18218) (reliable random access — *Best Paper, IEEE NetSoft 2025*), and **FlexRU** (a virtualization framework for shared radio units). In 2024 I spent a semester at **Microsoft Research** building a GEO-based 5G non-terrestrial network testbed.
+I am a **Research Assistant Professor** in the [Department of Electrical and Computer Engineering](https://www.ece.iastate.edu/) at **Iowa State University**, affiliated with the [WiCI Center](https://wici.iastate.edu/). I build **open, reliable, and scalable next-generation wireless systems** — and the **living-lab infrastructure** needed to evaluate them under the messy conditions of the real world.
 
-I am on the **academic job market for Fall 2026**. My long-term vision is to *democratize next-generation wireless innovation* — making 5G/6G accessible, affordable, and deployable for rural, agricultural, and underserved communities, beginning in Iowa and the broader Midwest.
+My PhD dissertation, ***Toward Democratizing 5G: Enabling Open, Reliable and Scalable Wireless Systems for Use and Innovation***, sits at the intersection of **wireless systems, networked infrastructure, and software engineering**. I lead the design and deployment of the [**ARA Wireless Living Lab**](https://arawireless.org/) — a large-scale, fully programmable 5G/Open-RAN testbed serving over **170 researchers** across the U.S. — and I build systems on top of it: [**AraSDR**](https://ieeexplore.ieee.org/document/10623061) (open, end-to-end 5G prototyping), [**AraRACH**](https://arxiv.org/abs/2503.18218) (reliable random access — *Best Paper, IEEE NetSoft 2025*), and **FlexRU** (transparent, deterministic radio-unit sharing for scalable, multi-tenant 5G on commodity SDRs). In 2024 I spent a semester at **Microsoft Research** building a GEO-based 5G non-terrestrial network testbed.
+
+My long-term vision is to *democratize next-generation wireless innovation* — making 5G/6G accessible, affordable, and deployable for rural, agricultural, and underserved communities, beginning in Iowa and the broader Midwest.
 
 <hr style="margin: 2rem 0;">
 
@@ -95,5 +104,5 @@ I am on the **academic job market for Fall 2026**. My long-term vision is to *de
   &nbsp;&middot;&nbsp;
   <i class="fa-solid fa-file-lines"></i>&nbsp; <a href="/assets/pdf/Joshua_Ofori_Boateng_CV.pdf">CV (PDF)</a>
   &nbsp;&middot;&nbsp;
-  <i class="fa-brands fa-linkedin"></i>&nbsp; <a href="https://www.linkedin.com/in/joshua-ofori-boateng/">LinkedIn</a>
+  <i class="fa-brands fa-linkedin"></i>&nbsp; <a href="https://www.linkedin.com/in/joshua-ofori-boateng-22b2b0145/">LinkedIn</a>
 </p>
