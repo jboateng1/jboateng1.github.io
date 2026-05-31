@@ -1,34 +1,70 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Co-author links for the publications page.
+#
+# When an author in _bibliography/papers.bib matches an entry below (by last name
+# + a first-name variant), their name becomes a link to the URL given here.
+# Names not listed here simply render as plain text.
+#
+# Keys are the lowercased last name; "firstname" must include every initial/spelling
+# used in papers.bib for that person. URLs are the WiCI team profile pages
+# (https://wici.iastate.edu/team/) where available.
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"zhang":
+  - firstname: ["Hongwei", "H."]
+    url: https://www.ece.iastate.edu/~hongwei/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"qiao":
+  - firstname: ["Daji", "D."]
+    url: https://www.engineering.iastate.edu/people/profile/daji/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"babu":
+  - firstname: ["Sarath", "S."]
+    url: https://www.engineering.iastate.edu/people/profile/sarath4/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"islam":
+  - firstname: ["Taimoor", "T. U.", "T."]
+    url: https://tislam93.github.io/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"nadim":
+  - firstname: ["Md", "M."]
+    url: https://nadim147.github.io/nadim/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"selim":
+  - firstname: ["Mohamed", "Mohammed Y.", "M. Y.", "M."]
+    url: https://www.engineering.iastate.edu/people/profile/myoussef/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"cohen":
+  - firstname: ["Myra B.", "Myra", "M. B."]
+    url: https://faculty.sites.iastate.edu/mcohen/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"guan":
+  - firstname: ["Yong", "Y."]
+    url: https://www.engineering.iastate.edu/~guan/
+
+"zheng":
+  - firstname: ["Mai", "M."]
+    url: https://www.ece.iastate.edu/~mai/
+
+"kamal":
+  - firstname: ["Ahmed", "A."]
+    url: https://www.ece.iastate.edu/~kamal/
+
+"ahmad":
+  - firstname: ["Arsalan", "A."]
+    url: https://www.linkedin.com/in/arsalanahmad07/
+
+"perrin":
+  - firstname: ["Owen", "O. J.", "O."]
+    url: https://www.linkedin.com/in/owen-perrin-0bb4b3206/
+
+"meng":
+  - firstname: ["Zhibo", "Z."]
+    url: https://www.linkedin.com/in/zhibo-meng-07a260277/
+
+# Evan Gossling — papers.bib spells this both "Gossling" and "Gosling", so both
+# last-name keys point to the same profile.
+"gossling":
+  - firstname: ["Evan", "E."]
+    url: https://evangossling.github.io/
+"gosling":
+  - firstname: ["Evan", "E."]
+    url: https://evangossling.github.io/

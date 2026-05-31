@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: code
 description: GitHub activity and the open-source stacks I build on.
-nav: true
+nav: false # hidden from the top menu for now — set back to true to restore
 nav_order: 7
 ---
 

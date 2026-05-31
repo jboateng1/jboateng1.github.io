@@ -18,3 +18,6 @@ nav_order: 3
 {% bibliography %}
 
 </div>
+
+<!-- Makes the "N more authors" expander work (al-folio v1 dropped the jQuery it relied on). -->
+<script src="{{ '/assets/js/more-authors-fix.js' | relative_url }}"></script>

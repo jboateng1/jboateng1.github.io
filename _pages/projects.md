@@ -1,6 +1,6 @@
 ---
 layout: page
-title: research
+title: projects
 permalink: /projects/
 description: Systems I have built and contributed to — programmable wireless infrastructure, Open RAN performance, and shared radio frameworks.
 nav: true
