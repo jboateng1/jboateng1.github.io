@@ -9,5 +9,5 @@ github_repos:
   - jboateng1/jboateng1.github.io
   # Open-source stacks Joshua works with day-to-day:
   - srsran/srsRAN_Project
-  - open-air-interface/openair5g          # mirror — primary lives on GitLab
+  - open-air-interface/openair5g # mirror — primary lives on GitLab
   - open5gs/open5gs

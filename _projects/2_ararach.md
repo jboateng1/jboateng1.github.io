@@ -8,7 +8,7 @@ category: systems
 related_publications: true
 ---
 
-> **AraRACH** is a *timing-aware scheduling* mechanism that significantly improves the reliability of the 5G random-access channel (RACH) in open-source RAN stacks — under real-world outdoor conditions.
+> **AraRACH** is a _timing-aware scheduling_ mechanism that significantly improves the reliability of the 5G random-access channel (RACH) in open-source RAN stacks — under real-world outdoor conditions.
 
 <div class="alert alert-warning d-flex align-items-center" role="alert" style="background: linear-gradient(90deg, #fff3cd, #ffe69c); border: none; border-left: 4px solid #d4a017;">
   <i class="fa-solid fa-trophy fa-2x me-3" style="color: #b45309;"></i>

@@ -8,7 +8,7 @@ category: systems
 related_publications: true
 ---
 
-> **FlexRU** is a framework that lets *multiple independent 5G RAN instances* share a single physical radio unit (RU) — preserving slice isolation and timing correctness, at a fraction of the deployment cost.
+> **FlexRU** is a framework that lets _multiple independent 5G RAN instances_ share a single physical radio unit (RU) — preserving slice isolation and timing correctness, at a fraction of the deployment cost.
 
 #### <i class="fa-solid fa-bullseye"></i>&nbsp; Why this matters
 

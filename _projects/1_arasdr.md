@@ -8,7 +8,7 @@ category: systems
 related_publications: true
 ---
 
-> **AraSDR** is the first-of-its-kind end-to-end, **fully programmable 5G platform** that lets researchers build whole-stack 5G/6G solutions on **open-source software + commodity hardware** — and evaluate them under *real* outdoor propagation, interference, and mobility conditions.
+> **AraSDR** is the first-of-its-kind end-to-end, **fully programmable 5G platform** that lets researchers build whole-stack 5G/6G solutions on **open-source software + commodity hardware** — and evaluate them under _real_ outdoor propagation, interference, and mobility conditions.
 
 #### <i class="fa-solid fa-bullseye"></i>&nbsp; The problem
 

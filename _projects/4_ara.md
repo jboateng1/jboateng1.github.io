@@ -12,7 +12,7 @@ related_publications: true
 
 #### <i class="fa-solid fa-bullseye"></i>&nbsp; Vision
 
-Wireless research has a *reality gap*: most innovations are validated in simulation or single-room testbeds, then fail to translate to deployment. ARA closes that gap by giving researchers a programmable, instrumented infrastructure that lives outdoors — across farms, towns, and the long fiber/microwave links that connect them.
+Wireless research has a _reality gap_: most innovations are validated in simulation or single-room testbeds, then fail to translate to deployment. ARA closes that gap by giving researchers a programmable, instrumented infrastructure that lives outdoors — across farms, towns, and the long fiber/microwave links that connect them.
 
 #### <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp; My role
 
