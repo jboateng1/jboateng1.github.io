@@ -171,7 +171,7 @@
 <span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <script src="/assets/js/more-authors-fix.js"></script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joshua Ofori Boateng. Last updated: June 01, 2026.  ·  <span class="visit-counter" title="Total page views (GoatCounter)" style="color: var(--global-footer-text-color);"> <i class="fa-solid fa-eye"></i> <span id="visit-count" style="color: inherit; font: inherit;">0</span> visits </span> </div> </footer> <script data-goatcounter="https://jboateng1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> <script>
   document.addEventListener('DOMContentLoaded', function () {
     var base = 'https://jboateng1.goatcounter.com/counter/';
-    var paths = ['/', '/news/', '/projects/', '/publications/', '/awards/', '/service/', '/cv/', '/blog/'];
+    var paths = ["/404.html","/","/awards/","/books/","/cv/","/_pages/dropdown/","/news/","/plugins/","/people/","/projects/","/publications/","/repositories/","/service/","/blog/2022/","/blog/2024/","/blog/tag/medium/","/blog/tag/google/","/blog/category/jekyll/","/blog/category/jekyll-themes/","/blog/category/personal-blog/","/blog/category/blog/","/blog/category/academic/","/blog/category/external-posts/","/books/2024/","/books/tag/top-100/","/books/category/classics/","/books/category/crime/","/books/category/historical-fiction/","/books/category/mystery/","/books/category/novels/","/books/category/thriller/","/blog/index.html","/projects/1_ara/","/projects/2_ara_nrdz/","/projects/3_accord/",];
     Promise.all(
       paths.map(function (p) {
         return fetch(base + encodeURIComponent(p) + '.json')
