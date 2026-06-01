@@ -1,28 +1,18 @@
 ---
 layout: page
 title: ARA Wireless Living Lab
-description: <i class="fa-solid fa-tower-cell"></i>&nbsp; NSF PAWR — an at-scale rural wireless living lab spanning central Iowa
+description: NSF PAWR — an at-scale rural wireless living lab spanning central Iowa
 img: assets/img/ara_logo.png
 importance: 1
 category: wireless living labs
 related_publications: false
 ---
 
-> **ARA** is one of the NSF **Platforms for Advanced Wireless Research (PAWR)** sites — a first-of-its-kind, at-scale **wireless living lab for smart and connected rural communities**, deployed across Iowa State University, the City of Ames, surrounding research and producer farms, and rural communities throughout central Iowa.
+ARA is one of the NSF Platforms for Advanced Wireless Research (PAWR) sites, and the only one built around rural and agricultural communities. It spans more than 60 km across Iowa State University, the City of Ames, nearby research and producer farms, and rural towns throughout central Iowa — so experiments run under genuine rural conditions: long-distance links, open-field propagation, weather, and mobility, rather than the controlled setting of an indoor lab.
 
-#### <i class="fa-solid fa-bullseye"></i>&nbsp; What it is
+The platform is intentionally heterogeneous. It combines mid-band and mmWave 5G, massive MIMO, TV white-space, and free-space optical links, all backed by edge and cloud compute over a mix of fiber, microwave, and optical x-haul. Researchers anywhere in the country can reserve resources, deploy a full software stack, and collect real-world measurements through a self-service workflow.
 
-ARA is an open, programmable platform for advanced wireless research that spans a region **over 60 km in diameter**. Unlike indoor or single-cell testbeds, it lets researchers evaluate 5G/6G, Open RAN, and broadband systems under _real_ rural conditions — long-distance links, agricultural environments, weather, and mobility.
-
-#### <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp; What it provides
-
-- A heterogeneous wireless platform combining **mid-band and mmWave 5G, massive MIMO, TVWS, and free-space optical** links.
-- Fiber, microwave, and optical **x-haul** connecting rural base stations to edge and cloud compute.
-- A **self-service experiment workflow** so researchers nationwide can reserve resources, deploy whole-stack solutions, and collect real-world measurements.
-
-#### <i class="fa-solid fa-rss"></i>&nbsp; My role
-
-I help lead the **design, deployment, and operation** of the ARA living lab — building the programmable 5G/Open-RAN infrastructure and supporting the **170+ researchers** across the U.S. who run experiments on it.
+I lead the design, deployment, and day-to-day operation of ARA — building out its programmable 5G/6G and Open RAN infrastructure and supporting the 170+ researchers across the U.S. who run experiments on it.
 
 #### <i class="fa-solid fa-link"></i>&nbsp; Links
 

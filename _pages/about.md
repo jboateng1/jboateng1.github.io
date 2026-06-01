@@ -51,19 +51,19 @@ My long-term vision is to _democratize next-generation wireless innovation_ — 
   <div class="col-md-4">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
       <h6><i class="fa-solid fa-tower-cell"></i>&nbsp; Open, Programmable &amp; AI-native RAN</h6>
-      <p class="mb-0" style="font-size: 0.92rem;">Open-source 5G/6G stacks (OAI, srsRAN), software-defined RAN virtualization, multi-tenant infrastructure.</p>
+      <p class="mb-0">Open-source 5G/6G stacks (OAI, srsRAN), software-defined RAN virtualization, multi-tenant infrastructure.</p>
     </div>
   </div>
   <div class="col-md-4">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
       <h6><i class="fa-solid fa-satellite-dish"></i>&nbsp; Wireless Testbeds &amp; Living Labs</h6>
-      <p class="mb-0" style="font-size: 0.92rem;">Large-scale experimental 5G/6G platforms, real-world open RAN prototyping, reproducible wireless experimentation.</p>
+      <p class="mb-0">Large-scale experimental 5G/6G platforms, real-world open RAN prototyping, reproducible wireless experimentation.</p>
     </div>
   </div>
   <div class="col-md-4">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
       <h6><i class="fa-solid fa-bolt"></i>&nbsp; URLLC &amp; Deterministic Wireless</h6>
-      <p class="mb-0" style="font-size: 0.92rem;">Measurement-driven latency modeling, system-level tuning for predictable low-latency 5G/6G, precision agriculture.</p>
+      <p class="mb-0">Measurement-driven latency modeling, system-level tuning for predictable low-latency 5G/6G, precision agriculture.</p>
     </div>
   </div>
 </div>

@@ -1,28 +1,18 @@
 ---
 layout: page
 title: ACCoRD
-description: <i class="fa-solid fa-network-wired"></i>&nbsp; NTIA-funded Open RAN testing, interoperability &amp; commercialization center
+description: NTIA-funded center for Open RAN testing, interoperability, and commercialization
 img: assets/img/accord_logo.png
 importance: 1
 category: open ran
 related_publications: false
 ---
 
-> **ACCoRD** — _Acceleration of Compatibility and Commercialization for Open RAN Deployments_ — is an NTIA-funded effort to build a center for **testing, evaluating, and de-risking Open RAN** so it can be deployed at commercial scale.
+ACCoRD — Acceleration of Compatibility and Commercialization for Open RAN Deployments — is an NTIA-funded effort to build the testing and R&D capacity that Open RAN needs to reach commercial scale. Open RAN's promise is a multi-vendor, software-defined mobile network, but operators will only adopt it once they can trust that components from different vendors interoperate, perform, and stay secure when combined.
 
-#### <i class="fa-solid fa-bullseye"></i>&nbsp; The goal
+The project stands up a testing, evaluation, and R&D center focused on exactly those questions, and brings together U.S. carriers (AT&T and Verizon), consulting international carriers (NTT DOCOMO and Reliance Jio), and American Open Testing and Integration Centers. Much of the at-scale, real-world validation runs through the ARA OTIC at Iowa State.
 
-Open RAN promises a multi-vendor, software-defined mobile network, but operators need confidence that components from different vendors actually **interoperate, perform, and stay secure**. ACCoRD builds the testing and R&D capacity to close that gap and accelerate commercial adoption.
-
-#### <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp; What it does
-
-- Stands up a **testing, evaluation, and R&D center** focused on Open RAN **performance, interoperability, and security**.
-- Brings together a consortium of **U.S. carriers (AT&amp;T, Verizon)**, consulting international carriers (**NTT DOCOMO, Reliance Jio**), and American **Open Testing &amp; Integration Centers (OTICs)**.
-- Leverages the **ARA OTIC** at Iowa State for real-world, at-scale validation.
-
-#### <i class="fa-solid fa-rss"></i>&nbsp; My role
-
-I contribute to Open RAN integration and performance testing on the ARA platform that underpins ACCoRD's evaluation work.
+My work centers on Open RAN integration and performance testing on the ARA platform that underpins ACCoRD's evaluations.
 
 #### <i class="fa-solid fa-link"></i>&nbsp; Links
 

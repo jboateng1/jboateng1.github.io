@@ -40,7 +40,7 @@
 @use "typograms";
 
 /* ===========================================================================
-   Personal customizations — ISU Cardinal & Gold + Space Grotesk / Inter
+   Personal customizations — ISU Cardinal & Gold palette + Inter typography.
    (loads after tailwind.css, so these win.)
    =========================================================================== */
 
@@ -51,19 +51,13 @@ html[data-theme="dark"] {
   --global-highlight-color: #f1be48;
 }
 
+/* Single, uniform type family across the whole site (headings inherit this). */
 body {
   font-family: "Inter", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-brand,
-.post-title,
-.post-title a,
+/* Page/project subtitle: keep it readable at normal body size, not tiny. */
 .post-description {
-  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }

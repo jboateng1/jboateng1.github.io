@@ -1,28 +1,18 @@
 ---
 layout: page
 title: ARA-NRDZ
-description: <i class="fa-solid fa-satellite-dish"></i>&nbsp; NSF National Radio Dynamic Zone — dynamic spectrum sharing for rural regions
+description: NSF National Radio Dynamic Zone — dynamic spectrum sharing for rural regions
 img: assets/img/nrdz.png
 importance: 1
 category: dynamic spectrum sharing
 related_publications: false
 ---
 
-> **ARA-NRDZ** establishes a **National Radio Dynamic Zone (NRDZ)** on top of the ARA Wireless Living Lab — a real-world environment for researching, prototyping, and field-testing **dynamic spectrum sharing** in rural regions.
+ARA-NRDZ establishes a National Radio Dynamic Zone on top of the ARA Wireless Living Lab — a real-world environment for studying and field-testing dynamic spectrum sharing in rural regions. Rural spectrum is mostly allocated statically yet used lightly, because users are spread far apart and their demand changes a lot from place to place and hour to hour. That gap is the opportunity: with enough sensing and coordination, the same spectrum can be shared much more aggressively without disrupting the incumbents who hold the rights to it.
 
-#### <i class="fa-solid fa-bullseye"></i>&nbsp; The problem
+Within the zone we run spectrum sensing and measurement across the ARA footprint, together with the coordination mechanisms that let incumbent and experimental systems share bands across both space and time. The aim is to give researchers, educators, and students a place to prototype and validate these ideas in the field instead of only in simulation.
 
-Radio spectrum is scarce and statically allocated, yet in rural regions users are **sparsely distributed** with usage that varies widely across space and time. That underuse is an opportunity: spectrum can be shared far more aggressively if we can measure, predict, and coordinate it safely.
-
-#### <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp; What it enables
-
-- A live **radio dynamic zone** for research, education, innovation, and field testing of spectrum-sharing solutions.
-- Real-world **spectrum sensing and measurement** across the ARA footprint.
-- Coordination mechanisms that let incumbent and experimental systems **share spectrum across space and time** without harmful interference.
-
-#### <i class="fa-solid fa-rss"></i>&nbsp; My role
-
-I contribute to the wireless infrastructure and experimentation workflows that make ARA-NRDZ a usable, programmable platform for spectrum-sharing research.
+I design the experimentation workflows and deploy the wireless infrastructure that make ARA-NRDZ a usable, programmable resource for spectrum-sharing research.
 
 #### <i class="fa-solid fa-link"></i>&nbsp; Links
 
