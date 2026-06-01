@@ -15,11 +15,3 @@ description: Curriculum Vitae &middot; updated Feb 2026
     <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; Open in new tab
   </a>
 </div>
-
-<div class="ratio ratio-4x3 my-4 shadow rounded overflow-hidden">
-  <iframe src="/assets/pdf/Joshua_Ofori_Boateng_CV.pdf" title="Joshua Ofori Boateng CV" style="border: none;"></iframe>
-</div>
-
-<p class="text-center" style="opacity: 0.7; font-size: 0.9rem;">
-  <i class="fa-solid fa-circle-info"></i>&nbsp; If the embed doesn't render, use the download button above.
-</p>

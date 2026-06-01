@@ -57,7 +57,7 @@ My long-term vision is to _democratize next-generation wireless innovation_ — 
   <div class="col-md-4">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
       <h6><i class="fa-solid fa-satellite-dish"></i>&nbsp; Wireless Testbeds &amp; Living Labs</h6>
-      <p class="mb-0" style="font-size: 0.92rem;">Large-scale SDR-based experimental platforms, real-world measurement, reproducible wireless experimentation.</p>
+      <p class="mb-0" style="font-size: 0.92rem;">Large-scale experimental 5G/6G platforms, real-world open RAN prototyping, reproducible wireless experimentation.</p>
     </div>
   </div>
   <div class="col-md-4">
@@ -87,7 +87,7 @@ My long-term vision is to _democratize next-generation wireless innovation_ — 
   </div>
   <div class="col-6 col-md-3">
     <div class="p-3 rounded shadow-sm h-100" style="background: var(--global-card-bg-color);">
-      <div style="font-size: 1.6rem; font-weight: 700; color: var(--global-theme-color);">$60M+</div>
+      <div style="font-size: 1.6rem; font-weight: 700; color: var(--global-theme-color);">$20M+</div>
       <div style="font-size: 0.85rem; opacity: 0.85;">Funded projects involved</div>
     </div>
   </div>
