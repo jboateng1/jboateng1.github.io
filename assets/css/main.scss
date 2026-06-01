@@ -1,0 +1,69 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+# ---------------------------------------------------------------------------
+# LOCAL OVERRIDE of al_folio_core's assets/css/main.scss.
+# Keep the @use list below in sync with the gem on theme upgrades; the only
+# bespoke parts are the color tokens passed to `variables` and the
+# "Personal customizations" block at the bottom (ISU cardinal & gold palette
+# + Space Grotesk / Inter typography). See docs/BOUNDARIES.md.
+# ---------------------------------------------------------------------------
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure design tokens BEFORE loading any partials.
+   $purple-color / $cyan-color drive --global-theme-color (light / dark) in _themes.scss. */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }},
+  $purple-color: #c8102e,
+  $cyan-color: #e8485c
+);
+
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* ===========================================================================
+   Personal customizations — ISU Cardinal & Gold + Space Grotesk / Inter
+   (loads after tailwind.css, so these win.)
+   =========================================================================== */
+
+:root {
+  --global-highlight-color: #f1be48; /* ISU gold */
+}
+html[data-theme="dark"] {
+  --global-highlight-color: #f1be48;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.post-title,
+.post-title a,
+.post-description {
+  font-family: "Space Grotesk", sans-serif;
+}
