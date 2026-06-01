@@ -170,16 +170,29 @@
   <span class="na">issn</span> <span class="p">=</span> <span class="s">{2542-6605}</span>
 <span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <script src="/assets/js/more-authors-fix.js"></script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joshua Ofori Boateng. Last updated: June 01, 2026.  ·  <span class="visit-counter" title="Total page views (GoatCounter)" style="color: var(--global-footer-text-color);"> <i class="fa-solid fa-eye"></i> <span id="visit-count">0</span> visits </span> </div> </footer> <script data-goatcounter="https://jboateng1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> <script>
   document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://jboateng1.goatcounter.com/counter/TOTAL.json')
-      .then(function (r) {
-        return r.ok ? r.json() : Promise.reject();
+    var base = 'https://jboateng1.goatcounter.com/counter/';
+    var paths = ['/', '/news/', '/projects/', '/publications/', '/awards/', '/service/', '/cv/', '/blog/'];
+    Promise.all(
+      paths.map(function (p) {
+        return fetch(base + encodeURIComponent(p) + '.json')
+          .then(function (r) {
+            return r.ok ? r.json() : { count: '0' };
+          })
+          .then(function (d) {
+            return parseInt(String(d.count || '0').replace(/,/g, ''), 10) || 0;
+          })
+          .catch(function () {
+            return 0;
+          });
       })
-      .then(function (d) {
-        document.getElementById('visit-count').textContent = d.count;
-      })
-      .catch(function () {
-        /* keep the default "0"; do not hide the counter */
-      });
+    ).then(function (counts) {
+      var total = counts.reduce(function (a, b) {
+        return a + b;
+      }, 0);
+      if (total > 0) {
+        document.getElementById('visit-count').textContent = total.toLocaleString();
+      }
+    });
   });
 </script> <script>
   window.alFolio = {

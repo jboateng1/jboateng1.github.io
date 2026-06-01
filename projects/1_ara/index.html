@@ -2,16 +2,29 @@
     initTheme();
   </script> </head> <body class=" "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Joshua</span> Ofori Boateng </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/news/">news </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/awards/">awards </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/service/">service </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">ARA Wireless Living Lab</h1> <p class="post-description">NSF PAWR — an at-scale rural wireless living lab spanning central Iowa</p> </header> <article> <p>ARA is one of the NSF Platforms for Advanced Wireless Research (PAWR) sites, and the only one built around rural and agricultural communities. It spans more than 60 km across Iowa State University, the City of Ames, nearby research and producer farms, and rural towns throughout central Iowa — so experiments run under genuine rural conditions: long-distance links, open-field propagation, weather, and mobility, rather than the controlled setting of an indoor lab.</p> <p>The platform is intentionally heterogeneous. It combines mid-band and mmWave 5G, massive MIMO, TV white-space, and free-space optical links, all backed by edge and cloud compute over a mix of fiber, microwave, and optical x-haul. Researchers anywhere in the country can reserve resources, deploy a full software stack, and collect real-world measurements through a self-service workflow.</p> <p>I lead the design, deployment, and day-to-day operation of ARA — building out its programmable 5G/6G and Open RAN infrastructure and supporting the 170+ researchers across the U.S. who run experiments on it.</p> <h4 id="-links"> <i class="fa-solid fa-link"></i>  Links</h4> <ul> <li> <i class="fa-solid fa-globe"></i> <strong>Project site:</strong> <a href="https://arawireless.org/" rel="external nofollow noopener" target="_blank">arawireless.org</a> </li> <li> <i class="fa-solid fa-flask"></i> <strong>WiCI overview:</strong> <a href="https://wici.iastate.edu/" rel="external nofollow noopener" target="_blank">Center for Wireless, Communities &amp; Innovation</a> </li> <li> <i class="fa-solid fa-building-columns"></i> <strong>Program:</strong> NSF Platforms for Advanced Wireless Research (PAWR)</li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joshua Ofori Boateng. Last updated: June 01, 2026.  ·  <span class="visit-counter" title="Total page views (GoatCounter)" style="color: var(--global-footer-text-color);"> <i class="fa-solid fa-eye"></i> <span id="visit-count">0</span> visits </span> </div> </footer> <script data-goatcounter="https://jboateng1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> <script>
   document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://jboateng1.goatcounter.com/counter/TOTAL.json')
-      .then(function (r) {
-        return r.ok ? r.json() : Promise.reject();
+    var base = 'https://jboateng1.goatcounter.com/counter/';
+    var paths = ['/', '/news/', '/projects/', '/publications/', '/awards/', '/service/', '/cv/', '/blog/'];
+    Promise.all(
+      paths.map(function (p) {
+        return fetch(base + encodeURIComponent(p) + '.json')
+          .then(function (r) {
+            return r.ok ? r.json() : { count: '0' };
+          })
+          .then(function (d) {
+            return parseInt(String(d.count || '0').replace(/,/g, ''), 10) || 0;
+          })
+          .catch(function () {
+            return 0;
+          });
       })
-      .then(function (d) {
-        document.getElementById('visit-count').textContent = d.count;
-      })
-      .catch(function () {
-        /* keep the default "0"; do not hide the counter */
-      });
+    ).then(function (counts) {
+      var total = counts.reduce(function (a, b) {
+        return a + b;
+      }, 0);
+      if (total > 0) {
+        document.getElementById('visit-count').textContent = total.toLocaleString();
+      }
+    });
   });
 </script> <script>
   window.alFolio = {

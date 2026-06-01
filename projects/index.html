@@ -2,16 +2,29 @@
     initTheme();
   </script> </head> <body class=" "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Joshua</span> Ofori Boateng </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/news/">news </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/awards/">awards </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/service/">service </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">projects</h1> <p class="post-description">Programmable wireless living labs, dynamic spectrum sharing, and Open RAN — the at-scale platforms and consortia I help build and run.</p> </header> <article> <div class="projects"> <a id="wireless living labs" href=".#wireless%20living%20labs"> <h2 class="category">wireless living labs</h2> </a> <div class="row row-cols-1 row-cols-md-3"> <div class="col"> <a href="/projects/1_ara/"> <div class="card h-100 hoverable"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/ara_logo-480.webp 480w,/assets/img/ara_logo-800.webp 800w,/assets/img/ara_logo-1400.webp 1400w," type="image/webp" sizes="250px"></source> <img src="/assets/img/ara_logo.png" class="card-img-top" width="100%" height="auto" alt="project thumbnail" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <div class="card-body"> <h2 class="card-title">ARA Wireless Living Lab</h2> <p class="card-text">NSF PAWR — an at-scale rural wireless living lab spanning central Iowa</p> <div class="row ml-1 mr-1 p-0"> </div> </div> </div> </a> </div> </div> <a id="open ran" href=".#open%20ran"> <h2 class="category">open ran</h2> </a> <div class="row row-cols-1 row-cols-md-3"> <div class="col"> <a href="/projects/3_accord/"> <div class="card h-100 hoverable"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/accord_logo-480.webp 480w,/assets/img/accord_logo-800.webp 800w,/assets/img/accord_logo-1400.webp 1400w," type="image/webp" sizes="250px"></source> <img src="/assets/img/accord_logo.png" class="card-img-top" width="100%" height="auto" alt="project thumbnail" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <div class="card-body"> <h2 class="card-title">ACCoRD</h2> <p class="card-text">NTIA-funded center for Open RAN testing, interoperability, and commercialization</p> <div class="row ml-1 mr-1 p-0"> </div> </div> </div> </a> </div> </div> <a id="dynamic spectrum sharing" href=".#dynamic%20spectrum%20sharing"> <h2 class="category">dynamic spectrum sharing</h2> </a> <div class="row row-cols-1 row-cols-md-3"> <div class="col"> <a href="/projects/2_ara_nrdz/"> <div class="card h-100 hoverable"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/nrdz-480.webp 480w,/assets/img/nrdz-800.webp 800w,/assets/img/nrdz-1400.webp 1400w," type="image/webp" sizes="250px"></source> <img src="/assets/img/nrdz.png" class="card-img-top" width="100%" height="auto" alt="project thumbnail" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <div class="card-body"> <h2 class="card-title">ARA-NRDZ</h2> <p class="card-text">NSF National Radio Dynamic Zone — dynamic spectrum sharing for rural regions</p> <div class="row ml-1 mr-1 p-0"> </div> </div> </div> </a> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joshua Ofori Boateng. Last updated: June 01, 2026.  ·  <span class="visit-counter" title="Total page views (GoatCounter)" style="color: var(--global-footer-text-color);"> <i class="fa-solid fa-eye"></i> <span id="visit-count">0</span> visits </span> </div> </footer> <script data-goatcounter="https://jboateng1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> <script>
   document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://jboateng1.goatcounter.com/counter/TOTAL.json')
-      .then(function (r) {
-        return r.ok ? r.json() : Promise.reject();
+    var base = 'https://jboateng1.goatcounter.com/counter/';
+    var paths = ['/', '/news/', '/projects/', '/publications/', '/awards/', '/service/', '/cv/', '/blog/'];
+    Promise.all(
+      paths.map(function (p) {
+        return fetch(base + encodeURIComponent(p) + '.json')
+          .then(function (r) {
+            return r.ok ? r.json() : { count: '0' };
+          })
+          .then(function (d) {
+            return parseInt(String(d.count || '0').replace(/,/g, ''), 10) || 0;
+          })
+          .catch(function () {
+            return 0;
+          });
       })
-      .then(function (d) {
-        document.getElementById('visit-count').textContent = d.count;
-      })
-      .catch(function () {
-        /* keep the default "0"; do not hide the counter */
-      });
+    ).then(function (counts) {
+      var total = counts.reduce(function (a, b) {
+        return a + b;
+      }, 0);
+      if (total > 0) {
+        document.getElementById('visit-count').textContent = total.toLocaleString();
+      }
+    });
   });
 </script> <script>
   window.alFolio = {

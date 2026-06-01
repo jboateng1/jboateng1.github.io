@@ -2,16 +2,29 @@
     initTheme();
   </script> </head> <body class=" "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Joshua</span> Ofori Boateng </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/news/">news <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/awards/">awards </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/service/">service </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Best Paper Wintech</h1> <p class="post-meta"> Created on October 15, 2023 </p> <p class="post-tags"> <i class="fa-solid fa-calendar fa-sm"></i> 2023 </p> </header> <article class="post-content"> <div id="markdown-content"> <p><i class="fa-solid fa-trophy" style="color: #d4a017;"></i>  <strong>Best Paper Award</strong> at <strong>ACM WiNTECH 2023</strong> (Madrid) for <em>AraMIMO: Programmable TVWS mMIMO Living Lab for Rural Wireless</em>.</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joshua Ofori Boateng. Last updated: June 01, 2026.  ·  <span class="visit-counter" title="Total page views (GoatCounter)" style="color: var(--global-footer-text-color);"> <i class="fa-solid fa-eye"></i> <span id="visit-count">0</span> visits </span> </div> </footer> <script data-goatcounter="https://jboateng1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> <script>
   document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://jboateng1.goatcounter.com/counter/TOTAL.json')
-      .then(function (r) {
-        return r.ok ? r.json() : Promise.reject();
+    var base = 'https://jboateng1.goatcounter.com/counter/';
+    var paths = ['/', '/news/', '/projects/', '/publications/', '/awards/', '/service/', '/cv/', '/blog/'];
+    Promise.all(
+      paths.map(function (p) {
+        return fetch(base + encodeURIComponent(p) + '.json')
+          .then(function (r) {
+            return r.ok ? r.json() : { count: '0' };
+          })
+          .then(function (d) {
+            return parseInt(String(d.count || '0').replace(/,/g, ''), 10) || 0;
+          })
+          .catch(function () {
+            return 0;
+          });
       })
-      .then(function (d) {
-        document.getElementById('visit-count').textContent = d.count;
-      })
-      .catch(function () {
-        /* keep the default "0"; do not hide the counter */
-      });
+    ).then(function (counts) {
+      var total = counts.reduce(function (a, b) {
+        return a + b;
+      }, 0);
+      if (total > 0) {
+        document.getElementById('visit-count').textContent = total.toLocaleString();
+      }
+    });
   });
 </script> <script>
   window.alFolio = {
