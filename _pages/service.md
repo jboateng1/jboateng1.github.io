@@ -32,6 +32,7 @@ nav_order: 6
     border-left: 4px solid var(--global-theme-color);
     border-radius: 12px;
     padding: 1.1rem 1.3rem;
+    margin-bottom: 2.75rem;
   }
   .tpc-card .tpc-icon {
     font-size: 1.6rem;

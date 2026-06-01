@@ -39,9 +39,9 @@ latest_posts:
 
 I am a **Research Assistant Professor** at the Center for Wireless, Communities and Innovation ([WiCI](https://wici.iastate.edu/)) affiliated with the [Department of Electrical and Computer Engineering](https://www.ece.iastate.edu/) at **Iowa State University**. I build **open, reliable, and scalable next-generation wireless systems** — and the **living-lab infrastructure** needed to evaluate them under the challenging conditions of the real world.
 
-My PhD dissertation, **_Toward Democratizing 5G: Enabling Open, Reliable and Scalable Wireless Systems for Use and Innovation_**, sits at the intersection of wireless systems, networked infrastructure, and software engineering. I lead the design and deployment of the [ARA Wireless Living Lab](https://arawireless.org/) — a large-scale, fully programmable 5G/Open-RAN testbed serving over **170 researchers** across the U.S. In 2024 I spent a semester at **Microsoft Research** building a GEO-based 5G non-terrestrial network testbed.
+My research focuses on Democratizing 5G/6G systems through open, reliable and scalable wireless infrastructure. Working at the intersection of wireless systems, networked infrastructure, and software engineering. I lead the design and deployment of the [ARA Wireless Living Lab](https://arawireless.org/) — a large-scale, fully programmable 5G/Open-RAN testbed serving over **170 researchers** across the U.S. In 2024 I spent a semester at **Microsoft Research** building a GEO-based 5G non-terrestrial network testbed.
 
-My long-term vision is to _democratize next-generation wireless innovation_ — making 5G/6G accessible, affordable, and deployable for rural, agricultural, and underserved communities, beginning in Iowa and the broader Midwest.
+My long-term vision is to make next-generation wireless innovation accessible, affordable, and deployable for rural, agricultural, and underserved communities, across Iowa, the broader Midwest and the United States as a whole.
 
 <hr style="margin: 2rem 0;">
 
@@ -51,7 +51,7 @@ My long-term vision is to _democratize next-generation wireless innovation_ — 
   <div class="col-md-4">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
       <h6><i class="fa-solid fa-tower-cell"></i>&nbsp; Open, Programmable &amp; AI-native RAN</h6>
-      <p class="mb-0">Open-source 5G/6G stacks (OAI, srsRAN), software-defined RAN virtualization, multi-tenant infrastructure.</p>
+      <p class="mb-0">Open-source 5G/6G stacks (OCUDU, OAI), software-defined and intelligent RAN control, multi-tenant infrastructure.</p>
     </div>
   </div>
   <div class="col-md-4">
