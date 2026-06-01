@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-description: Curriculum Vitae &middot; updated Feb 2026
+description: Curriculum Vitae &middot; updated June 2026
 ---
 
 <div class="text-center my-4">
