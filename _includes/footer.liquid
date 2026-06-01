@@ -1,0 +1,67 @@
+{% comment %}
+  LOCAL OVERRIDE of al_folio_core's _includes/footer.liquid.
+  Keep in sync with the gem on theme upgrades. The only bespoke additions are the
+  visit-counter span in `footer_contents` and the GoatCounter scripts at the end.
+{% endcomment %}
+{% capture footer_contents %}
+  &copy; Copyright {{ site.time | date: '%Y' }}
+  {{ site.first_name }}
+  {{ site.middle_name }}
+  {{ site.last_name }}. {{ site.footer_text }}
+  {% if site.impressum_path %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+  {% endif %}
+  {% if site.last_updated %}
+    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+  {% endif %}
+  &nbsp;&middot;&nbsp;
+  <span class="visit-counter" title="Total page views (GoatCounter)">
+    <i class="fa-solid fa-eye"></i>&nbsp;<span id="visit-count">&hellip;</span> visits
+  </span>
+{% endcapture %}
+
+{% if site.footer_fixed %}
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      {{ footer_contents }}
+    </div>
+  </footer>
+{% else %}
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    {% if site.newsletter.enabled %}
+      {% if site.plugins contains 'al_newsletter' %}
+        {% include plugins/al_newsletter_form_center.liquid %}
+      {% else %}
+        {% include newsletter.liquid %}
+      {% endif %}
+    {% endif %}
+
+    <div class="container">
+      {{ footer_contents }}
+    </div>
+  </footer>
+{% endif %}
+
+<!-- GoatCounter: privacy-friendly visit tracking (records the page view). -->
+<script
+  data-goatcounter="https://jboateng1.goatcounter.com/count"
+  async
+  src="//gc.zgo.at/count.js"
+></script>
+
+<!-- Fill the footer counter with the site-wide total; hide it if unavailable. -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch("https://jboateng1.goatcounter.com/counter/TOTAL.json")
+      .then(function (r) {
+        return r.ok ? r.json() : Promise.reject();
+      })
+      .then(function (d) {
+        document.getElementById("visit-count").textContent = d.count;
+      })
+      .catch(function () {
+        var c = document.querySelector(".visit-counter");
+        if (c) c.style.display = "none";
+      });
+  });
+</script>
