@@ -50,16 +50,23 @@
 ></script>
 
 <!--
-  Fill the footer counter with the total views across the main pages.
-  GoatCounter's site-total JSON endpoint (/counter/TOTAL.json) is broken (always
-  returns 0), and the SVG/HTML badges that have the real total don't send CORS
-  headers — so we sum the per-path JSON counters (which work and allow CORS).
+  Fill the footer counter with the site-wide total views. GoatCounter's
+  /counter/TOTAL.json is broken (always 0) and the SVG/HTML badges that hold the
+  real total don't send CORS headers, so we sum the per-path JSON counters (which
+  work and allow CORS) for every page on the site. The path list is generated at
+  build time from all pages + the projects collection, so it stays complete as
+  pages are added. Pages with no views simply return 0.
   Stays at the default "0" if requests fail or are blocked by a tracker blocker.
 -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var base = 'https://jboateng1.goatcounter.com/counter/';
-    var paths = ['/', '/news/', '/projects/', '/publications/', '/awards/', '/service/', '/cv/', '/blog/'];
+    var paths = [
+      {%- assign all_urls = site.html_pages | concat: site.projects | map: 'url' | uniq -%}
+      {%- for u in all_urls -%}
+        {%- if u and u != '' -%}{{ u | jsonify }},{% endif -%}
+      {%- endfor -%}
+    ];
     Promise.all(
       paths.map(function (p) {
         return fetch(base + encodeURIComponent(p) + '.json')
