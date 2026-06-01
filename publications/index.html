@@ -169,17 +169,17 @@
   <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Elsevier}</span><span class="p">,</span>
   <span class="na">issn</span> <span class="p">=</span> <span class="s">{2542-6605}</span>
 <span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <script src="/assets/js/more-authors-fix.js"></script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joshua Ofori Boateng. Last updated: June 01, 2026.  ·  <span class="visit-counter" title="Total page views (GoatCounter)"> <i class="fa-solid fa-eye"></i> <span id="visit-count">…</span> visits </span> </div> </footer> <script data-goatcounter="https://jboateng1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://jboateng1.goatcounter.com/counter/TOTAL.json")
+  document.addEventListener('DOMContentLoaded', function () {
+    fetch('https://jboateng1.goatcounter.com/counter/TOTAL.json')
       .then(function (r) {
         return r.ok ? r.json() : Promise.reject();
       })
       .then(function (d) {
-        document.getElementById("visit-count").textContent = d.count;
+        document.getElementById('visit-count').textContent = d.count;
       })
       .catch(function () {
-        var c = document.querySelector(".visit-counter");
-        if (c) c.style.display = "none";
+        var c = document.querySelector('.visit-counter');
+        if (c) c.style.display = 'none';
       });
   });
 </script> <script>
