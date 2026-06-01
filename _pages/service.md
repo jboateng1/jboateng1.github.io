@@ -8,93 +8,119 @@ nav_order: 6
 ---
 
 <style>
-  .service-card {
-    background: var(--global-card-bg-color);
+  .svc-intro {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    max-width: 46rem;
+    margin-bottom: 2.2rem;
+  }
+  .svc-section-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .svc-section-title i {
+    color: var(--global-theme-color);
+  }
+
+  /* TPC highlight */
+  .tpc-card {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    background: linear-gradient(135deg, rgba(var(--global-theme-color-rgb, 0, 122, 255), 0.06), transparent);
+    border: 1px solid var(--global-divider-color);
     border-left: 4px solid var(--global-theme-color);
-    border-radius: 10px;
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+  }
+  .tpc-card .tpc-icon {
+    font-size: 1.6rem;
+    color: var(--global-theme-color);
+    flex-shrink: 0;
+  }
+  .tpc-card .tpc-role {
+    font-weight: 600;
+  }
+  .tpc-card .tpc-venue {
+    opacity: 0.8;
+    font-size: 0.92rem;
+  }
+  .tpc-card .tpc-year {
+    margin-left: auto;
+    font-weight: 700;
+    color: var(--global-theme-color);
+    white-space: nowrap;
+  }
+
+  /* Review venue badges */
+  .venue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  .venue-badge {
+    text-align: center;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 12px;
+    padding: 1.3rem 1rem;
     transition:
       transform 0.15s ease,
       box-shadow 0.15s ease;
   }
-  .service-card:hover {
+  .venue-badge:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12) !important;
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
   }
-  .service-card .svc-head {
-    font-weight: 600;
+  .venue-badge .vb-acronym {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--global-theme-color);
+    line-height: 1.1;
   }
-  .service-list {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
+  .venue-badge .vb-name {
+    font-size: 0.82rem;
+    opacity: 0.75;
+    margin: 0.35rem 0 0.6rem;
   }
-  .service-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    padding: 0.55rem 0;
-    border-bottom: 1px solid var(--global-divider-color);
-  }
-  .service-list li:last-child {
-    border-bottom: none;
-  }
-  .svc-year {
-    flex-shrink: 0;
+  .venue-badge .vb-years {
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--global-theme-color);
-    white-space: nowrap;
+    opacity: 0.9;
   }
 </style>
 
-<div class="row g-4 my-2">
+<p class="svc-intro">
+  I give back to the wireless, networking, and systems community — shaping program agendas and reviewing for leading IEEE venues that advance open and reliable next-generation wireless.
+</p>
 
-  <!-- Technical Program Committee -->
-  <div class="col-md-6">
-    <div class="service-card p-4 shadow-sm h-100">
-      <h5 class="svc-head mb-3"><i class="fa-solid fa-users-gear" style="color: var(--global-theme-color);"></i>&nbsp; Technical Program Committee</h5>
-      <ul class="service-list">
-        <li>
-          <span>ACM Workshop on Wireless Network Testbeds, Experimental Evaluation &amp; Characterization (<strong>WiNTECH</strong>)</span>
-          <span class="svc-year">2026</span>
-        </li>
-      </ul>
-    </div>
+<h5 class="svc-section-title"><i class="fa-solid fa-users-gear"></i>&nbsp; Technical Program Committee</h5>
+
+<div class="tpc-card mb-5">
+  <i class="fa-solid fa-network-wired tpc-icon"></i>
+  <div>
+    <div class="tpc-role">TPC Member</div>
+    <div class="tpc-venue">ACM Workshop on Wireless Network Testbeds, Experimental Evaluation &amp; Characterization (WiNTECH)</div>
   </div>
+  <span class="tpc-year">2026</span>
+</div>
 
-  <!-- Professional Membership -->
-  <div class="col-md-6">
-    <div class="service-card p-4 shadow-sm h-100">
-      <h5 class="svc-head mb-3"><i class="fa-solid fa-id-badge" style="color: var(--global-theme-color);"></i>&nbsp; Professional Membership</h5>
-      <ul class="service-list">
-        <li>
-          <span>IEEE Communications Society (<strong>ComSoc</strong>)</span>
-          <span class="svc-year">2024 – present</span>
-        </li>
-      </ul>
-    </div>
+<h5 class="svc-section-title"><i class="fa-solid fa-file-pen"></i>&nbsp; Peer Review</h5>
+
+<div class="venue-grid">
+  <div class="venue-badge">
+    <div class="vb-acronym">TWC</div>
+    <div class="vb-name">IEEE Transactions on Wireless Communications</div>
+    <div class="vb-years">2023 – 2026</div>
   </div>
-
-  <!-- Peer Review -->
-  <div class="col-12">
-    <div class="service-card p-4 shadow-sm h-100">
-      <h5 class="svc-head mb-3"><i class="fa-solid fa-file-pen" style="color: var(--global-theme-color);"></i>&nbsp; Peer Review</h5>
-      <ul class="service-list">
-        <li>
-          <span>IEEE Transactions on Wireless Communications (<strong>TWC</strong>)</span>
-          <span class="svc-year">2023 – 2026</span>
-        </li>
-        <li>
-          <span>IEEE Conference on Computer Communications (<strong>INFOCOM</strong>)</span>
-          <span class="svc-year">2022 – 2025</span>
-        </li>
-        <li>
-          <span>IEEE Military Communications Conference (<strong>MILCOM</strong>)</span>
-          <span class="svc-year">2025</span>
-        </li>
-      </ul>
-    </div>
+  <div class="venue-badge">
+    <div class="vb-acronym">INFOCOM</div>
+    <div class="vb-name">IEEE Conference on Computer Communications</div>
+    <div class="vb-years">2022 – 2025</div>
   </div>
-
+  <div class="venue-badge">
+    <div class="vb-acronym">MILCOM</div>
+    <div class="vb-name">IEEE Military Communications Conference</div>
+    <div class="vb-years">2025</div>
+  </div>
 </div>
