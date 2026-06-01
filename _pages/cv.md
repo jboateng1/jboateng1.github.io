@@ -15,3 +15,15 @@ description: Curriculum Vitae &middot; updated June 2026
     <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; Open in new tab
   </a>
 </div>
+
+<div class="my-4 shadow rounded overflow-hidden" style="width: 100%; height: 80vh; min-height: 600px;">
+  <object data="/assets/pdf/Joshua_Ofori_Boateng_CV.pdf#view=FitH" type="application/pdf" style="width: 100%; height: 100%;" aria-label="Joshua Ofori Boateng CV">
+    <!-- Fallback for browsers that can't render PDFs inline (e.g. most mobile browsers) -->
+    <div style="padding: 2rem; text-align: center;">
+      <p style="margin-bottom: 1rem;">Your browser can't display the PDF here.</p>
+      <a href="/assets/pdf/Joshua_Ofori_Boateng_CV.pdf" class="btn" style="background: var(--global-theme-color); color: white; padding: 0.6rem 1.5rem; border-radius: 8px; text-decoration: none;">
+        <i class="fa-solid fa-file-pdf"></i>&nbsp; Download the CV (PDF)
+      </a>
+    </div>
+  </object>
+</div>
