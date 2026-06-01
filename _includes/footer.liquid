@@ -51,17 +51,17 @@
 
 <!-- Fill the footer counter with the site-wide total; hide it if unavailable. -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://jboateng1.goatcounter.com/counter/TOTAL.json")
+  document.addEventListener('DOMContentLoaded', function () {
+    fetch('https://jboateng1.goatcounter.com/counter/TOTAL.json')
       .then(function (r) {
         return r.ok ? r.json() : Promise.reject();
       })
       .then(function (d) {
-        document.getElementById("visit-count").textContent = d.count;
+        document.getElementById('visit-count').textContent = d.count;
       })
       .catch(function () {
-        var c = document.querySelector(".visit-counter");
-        if (c) c.style.display = "none";
+        var c = document.querySelector('.visit-counter');
+        if (c) c.style.display = 'none';
       });
   });
 </script>
