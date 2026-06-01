@@ -50,21 +50,36 @@
 ></script>
 
 <!--
-  Fill the footer counter with the site-wide total. Leaves the default "0"
-  in place if the request fails or is blocked (e.g. by a tracker blocker),
-  so the counter stays visible instead of disappearing.
+  Fill the footer counter with the total views across the main pages.
+  GoatCounter's site-total JSON endpoint (/counter/TOTAL.json) is broken (always
+  returns 0), and the SVG/HTML badges that have the real total don't send CORS
+  headers — so we sum the per-path JSON counters (which work and allow CORS).
+  Stays at the default "0" if requests fail or are blocked by a tracker blocker.
 -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://jboateng1.goatcounter.com/counter/TOTAL.json')
-      .then(function (r) {
-        return r.ok ? r.json() : Promise.reject();
+    var base = 'https://jboateng1.goatcounter.com/counter/';
+    var paths = ['/', '/news/', '/projects/', '/publications/', '/awards/', '/service/', '/cv/', '/blog/'];
+    Promise.all(
+      paths.map(function (p) {
+        return fetch(base + encodeURIComponent(p) + '.json')
+          .then(function (r) {
+            return r.ok ? r.json() : { count: '0' };
+          })
+          .then(function (d) {
+            return parseInt(String(d.count || '0').replace(/,/g, ''), 10) || 0;
+          })
+          .catch(function () {
+            return 0;
+          });
       })
-      .then(function (d) {
-        document.getElementById('visit-count').textContent = d.count;
-      })
-      .catch(function () {
-        /* keep the default "0"; do not hide the counter */
-      });
+    ).then(function (counts) {
+      var total = counts.reduce(function (a, b) {
+        return a + b;
+      }, 0);
+      if (total > 0) {
+        document.getElementById('visit-count').textContent = total.toLocaleString();
+      }
+    });
   });
 </script>
