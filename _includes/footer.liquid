@@ -16,7 +16,7 @@
   {% endif %}
   &nbsp;&middot;&nbsp;
   <span class="visit-counter" title="Total page views (GoatCounter)">
-    <i class="fa-solid fa-eye"></i>&nbsp;<span id="visit-count">&hellip;</span> visits
+    <i class="fa-solid fa-eye"></i>&nbsp;<span id="visit-count">0</span> visits
   </span>
 {% endcapture %}
 
@@ -49,7 +49,11 @@
   src="//gc.zgo.at/count.js"
 ></script>
 
-<!-- Fill the footer counter with the site-wide total; hide it if unavailable. -->
+<!--
+  Fill the footer counter with the site-wide total. Leaves the default "0"
+  in place if the request fails or is blocked (e.g. by a tracker blocker),
+  so the counter stays visible instead of disappearing.
+-->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     fetch('https://jboateng1.goatcounter.com/counter/TOTAL.json')
@@ -60,8 +64,7 @@
         document.getElementById('visit-count').textContent = d.count;
       })
       .catch(function () {
-        var c = document.querySelector('.visit-counter');
-        if (c) c.style.display = 'none';
+        /* keep the default "0"; do not hide the counter */
       });
   });
 </script>
