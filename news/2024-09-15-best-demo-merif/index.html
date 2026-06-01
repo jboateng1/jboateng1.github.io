@@ -3,7 +3,7 @@
   </script> </head> <body class=" "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Joshua</span> Ofori Boateng </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/news/">news <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/awards/">awards </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/service/">service </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Best Demo Merif</h1> <p class="post-meta"> Created on September 15, 2024 </p> <p class="post-tags"> <i class="fa-solid fa-calendar fa-sm"></i> 2024 </p> </header> <article class="post-content"> <div id="markdown-content"> <p><i class="fa-solid fa-medal" style="color: #d4a017;"></i>  <strong>Best Demo Award</strong> at <strong>MERIF 2024</strong> (Kansas City) for the <em>ARA PAWR</em> wireless living-lab demo.</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joshua Ofori Boateng. Last updated: June 01, 2026.  ·  <span class="visit-counter" title="Total page views (GoatCounter)" style="color: var(--global-footer-text-color);"> <i class="fa-solid fa-eye"></i> <span id="visit-count" style="color: inherit; font: inherit;">0</span> visits </span> </div> </footer> <script data-goatcounter="https://jboateng1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> <script>
   document.addEventListener('DOMContentLoaded', function () {
     var base = 'https://jboateng1.goatcounter.com/counter/';
-    var paths = ["/404.html","/","/awards/","/books/","/cv/","/_pages/dropdown/","/news/","/plugins/","/people/","/projects/","/publications/","/repositories/","/service/","/blog/2022/","/blog/2024/","/blog/tag/medium/","/blog/tag/google/","/blog/category/jekyll/","/blog/category/jekyll-themes/","/blog/category/personal-blog/","/blog/category/blog/","/blog/category/academic/","/blog/category/external-posts/","/books/2024/","/books/tag/top-100/","/books/category/classics/","/books/category/crime/","/books/category/historical-fiction/","/books/category/mystery/","/books/category/novels/","/books/category/thriller/","/blog/index.html","/projects/1_ara/","/projects/2_ara_nrdz/","/projects/3_accord/",];
+    var paths = ["/404.html","/","/awards/","/cv/","/_pages/dropdown/","/news/","/plugins/","/people/","/projects/","/publications/","/repositories/","/service/","/blog/2022/","/blog/2024/","/blog/tag/medium/","/blog/tag/google/","/blog/category/jekyll/","/blog/category/jekyll-themes/","/blog/category/personal-blog/","/blog/category/blog/","/blog/category/academic/","/blog/category/external-posts/","/blog/index.html","/projects/1_ara/","/projects/2_ara_nrdz/","/projects/3_accord/",];
     Promise.all(
       paths.map(function (p) {
         return fetch(base + encodeURIComponent(p) + '.json')
@@ -86,34 +86,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/service/";
           },
-        },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-          
-        },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-          
-        },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-joined-the-center-for-wireless-communities-amp-amp-innovation-wici-at-iowa-state-university-as-a-phd-student-beginning-my-research-on-open-programmable-and-reliable-next-generation-wireless-systems",
+        },{id: "news-joined-the-center-for-wireless-communities-amp-amp-innovation-wici-at-iowa-state-university-as-a-phd-student-beginning-my-research-on-open-programmable-and-reliable-next-generation-wireless-systems",
           title: ' Joined the Center for Wireless, Communities &amp;amp;amp; Innovation (WiCI) at Iowa State University...',
           description: "",
           section: "News",},{id: "news-best-paper-award-at-acm-wintech-2023-madrid-for-aramimo-programmable-tvws-mmimo-living-lab-for-rural-wireless",
@@ -158,16 +131,6 @@ ninja.data = [{
           description: "NTIA-funded center for Open RAN testing, interoperability, and commercialization",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_accord/";
-            },},{id: "teachings-data-science-fundamentals",
-          title: 'Data Science Fundamentals',
-          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/data-science-fundamentals/";
-            },},{id: "teachings-introduction-to-machine-learning",
-          title: 'Introduction to Machine Learning',
-          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
         id: 'social-cv',
         title: 'CV',
