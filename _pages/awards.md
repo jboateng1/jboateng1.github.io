@@ -58,28 +58,28 @@ nav_order: 4
 
   <div class="col-md-6">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
-      <h6><i class="fa-solid fa-award"></i>&nbsp; Takano Electrical Engineering Scholarship</h6>
+      <h6><i class="fa-solid fa-award"></i>&nbsp; Takano Scholarship</h6>
       <p class="mb-0" style="font-size: 0.9rem; opacity: 0.85;">Iowa State University &middot; May 2021</p>
     </div>
   </div>
 
   <div class="col-md-6">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
-      <h6><i class="fa-solid fa-crown" style="color: #c08400;"></i>&nbsp; Valedictorian — B.Sc. Telecommunication Engineering</h6>
+      <h6><i class="fa-solid fa-crown" style="color: #c08400;"></i>&nbsp; Valedictorian</h6>
       <p class="mb-0" style="font-size: 0.9rem; opacity: 0.85;">Kwame Nkrumah University of Science and Technology (KNUST) &middot; June 2019</p>
     </div>
   </div>
 
   <div class="col-md-6">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
-      <h6><i class="fa-solid fa-star"></i>&nbsp; Provost Award — Overall Best Student in Telecom Eng.</h6>
+      <h6><i class="fa-solid fa-star"></i>&nbsp; Provost Award — Overall Best Student in Telecommunication Engineering</h6>
       <p class="mb-0" style="font-size: 0.9rem; opacity: 0.85;">KNUST &middot; Oct 2016 – Oct 2019 (multi-year)</p>
     </div>
   </div>
 
   <div class="col-md-6">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
-      <h6><i class="fa-solid fa-building"></i>&nbsp; Best Graduating Student in Telecom — Vodafone Ghana Prize</h6>
+      <h6><i class="fa-solid fa-building"></i>&nbsp; Best Graduating Student in Telecommunication Engineering — Vodafone Ghana Prize</h6>
       <p class="mb-0" style="font-size: 0.9rem; opacity: 0.85;">Vodafone Ghana &middot; March 2019</p>
     </div>
   </div>
@@ -100,7 +100,7 @@ nav_order: 4
 
   <div class="col-md-6">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
-      <h6><i class="fa-solid fa-medal"></i>&nbsp; National Union of Ghana Students Award — Overall Best 3rd-Year Student</h6>
+      <h6><i class="fa-solid fa-medal"></i>&nbsp; National Union of Ghana Students Award — Overall Best Engineering Student</h6>
       <p class="mb-0" style="font-size: 0.9rem; opacity: 0.85;">KNUST &middot; May 2018</p>
     </div>
   </div>
