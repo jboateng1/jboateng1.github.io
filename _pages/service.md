@@ -110,6 +110,11 @@ nav_order: 6
 
 <div class="venue-grid">
   <div class="venue-badge">
+    <div class="vb-acronym">JCN</div>
+    <div class="vb-name">Journal of Communications and Networks</div>
+    <div class="vb-years">2026</div>
+  </div>
+  <div class="venue-badge">
     <div class="vb-acronym">TWC</div>
     <div class="vb-name">IEEE Transactions on Wireless Communications</div>
     <div class="vb-years">2023 – 2026</div>
