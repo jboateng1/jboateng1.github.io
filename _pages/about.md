@@ -53,9 +53,9 @@ latest_posts:
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
-    height: 300px;
-    transform: translate(50%, -50%); /* center dot lands on the corner */
+    width: 380px;
+    height: 380px;
+    transform: translate(50%, -50%); /* center dot lands exactly on the corner */
     z-index: 1; /* sits behind the photo (z-index: 2) */
     pointer-events: none;
   }
