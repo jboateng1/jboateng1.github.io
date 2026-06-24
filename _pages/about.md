@@ -12,6 +12,7 @@ profile:
     <p><i class="fa-solid fa-location-dot"></i> 391C Durham Center</p>
     <p>613 Morrill Road, Ames, IA 50011</p>
     <p><i class="fa-solid fa-flask"></i> Center for Wireless, Communities &amp; Innovation (<a href='https://wici.iastate.edu/'>WiCI</a>)</p>
+    <div class="wireless-ripple" title="Wireless signal" aria-label="Wireless signal"><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-ring"></span><i class="fa-solid fa-tower-cell"></i></div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -34,6 +35,65 @@ latest_posts:
   .social .contact-icons a,
   .social .contact-icons i {
     font-size: 1.5rem;
+  }
+
+  /* Interactive wireless-signal ripple icon under the profile image.
+     A tower icon emits concentric rings; hovering speeds up the pulse. */
+  .wireless-ripple {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin: 0.75rem auto 0;
+    cursor: pointer;
+  }
+  .wireless-ripple i {
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    color: var(--global-theme-color);
+    transition: transform 0.3s ease;
+  }
+  .wireless-ripple:hover i {
+    transform: scale(1.15);
+  }
+  .wireless-ripple .ripple-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--global-theme-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+    animation: wireless-ripple-out 2.4s ease-out infinite;
+  }
+  .wireless-ripple .ripple-ring:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+  .wireless-ripple .ripple-ring:nth-child(3) {
+    animation-delay: 1.6s;
+  }
+  .wireless-ripple:hover .ripple-ring {
+    animation-duration: 1.2s;
+  }
+  @keyframes wireless-ripple-out {
+    0% {
+      transform: translate(-50%, -50%) scale(0.3);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2);
+      opacity: 0;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .wireless-ripple .ripple-ring {
+      animation: none;
+    }
   }
 </style>
 
