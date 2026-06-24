@@ -12,7 +12,7 @@ profile:
     <p><i class="fa-solid fa-location-dot"></i> 391C Durham Center</p>
     <p>613 Morrill Road, Ames, IA 50011</p>
     <p><i class="fa-solid fa-flask"></i> Center for Wireless, Communities &amp; Innovation (<a href='https://wici.iastate.edu/'>WiCI</a>)</p>
-    <div class="wireless-ripple" title="Wireless signal" aria-label="Wireless signal"><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-ring"></span><i class="fa-solid fa-tower-cell"></i></div>
+    <div class="wireless-ripple" title="Wireless signal" aria-label="Wireless signal"><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-dot"></span></div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -47,60 +47,69 @@ latest_posts:
     z-index: 2;
   }
 
-  /* Interactive wireless-signal ripple anchored to the top-right of the
-     profile photo. The tower icon peeks out at the corner while the rings
-     expand outward from behind the image. */
+  /* Interactive wireless-signal ripple whose center dot sits on the exact
+     top-right corner of the profile photo. Multiple thin rings expand
+     outward from behind the image at once. */
   .wireless-ripple {
     position: absolute;
-    top: 2px;
-    right: 2px;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%); /* center dot lands on the corner */
     z-index: 1; /* sits behind the photo (z-index: 2) */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
   }
-  .wireless-ripple i {
-    font-size: 1.1rem;
-    color: var(--global-theme-color);
+  .wireless-ripple .ripple-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--global-theme-color);
     transition: transform 0.3s ease;
   }
-  .wireless-ripple:hover i {
-    transform: scale(1.15);
+  .wireless-ripple:hover .ripple-dot {
+    transform: scale(1.25);
   }
   .wireless-ripple .ripple-ring {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--global-theme-color);
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--global-theme-color);
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0.3);
     opacity: 0;
-    animation: wireless-ripple-out 3.2s ease-out infinite;
+    animation: wireless-ripple-out 4s linear infinite;
   }
   .wireless-ripple .ripple-ring:nth-child(2) {
-    animation-delay: 1.05s;
+    animation-delay: 0.8s;
   }
   .wireless-ripple .ripple-ring:nth-child(3) {
-    animation-delay: 2.1s;
+    animation-delay: 1.6s;
+  }
+  .wireless-ripple .ripple-ring:nth-child(4) {
+    animation-delay: 2.4s;
+  }
+  .wireless-ripple .ripple-ring:nth-child(5) {
+    animation-delay: 3.2s;
   }
   .wireless-ripple:hover .ripple-ring {
-    animation-duration: 1.8s;
+    animation-duration: 2.4s;
   }
   @keyframes wireless-ripple-out {
     0% {
       transform: translate(-50%, -50%) scale(0.3);
-      opacity: 0.85;
+      opacity: 0.9;
     }
-    70% {
-      opacity: 0.25;
+    80% {
+      opacity: 0.2;
     }
     100% {
-      transform: translate(-50%, -50%) scale(5);
+      transform: translate(-50%, -50%) scale(16);
       opacity: 0;
     }
   }
