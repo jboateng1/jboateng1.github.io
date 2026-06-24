@@ -37,22 +37,33 @@ latest_posts:
     font-size: 1.5rem;
   }
 
-  /* Interactive wireless-signal ripple icon under the profile image.
-     A tower icon emits concentric rings; hovering speeds up the pulse. */
-  .wireless-ripple {
+  /* Make the profile block a positioning context, and lift the photo above
+     the ripple rings so they appear to radiate from behind the image. */
+  .profile {
     position: relative;
+  }
+  .profile img {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Interactive wireless-signal ripple anchored to the top-right of the
+     profile photo. The tower icon peeks out at the corner while the rings
+     expand outward from behind the image. */
+  .wireless-ripple {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 1; /* sits behind the photo (z-index: 2) */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    margin: 0.75rem auto 0;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
   }
   .wireless-ripple i {
-    position: relative;
-    z-index: 2;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--global-theme-color);
     transition: transform 0.3s ease;
   }
@@ -63,30 +74,33 @@ latest_posts:
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border: 2px solid var(--global-theme-color);
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0.3);
     opacity: 0;
-    animation: wireless-ripple-out 2.4s ease-out infinite;
+    animation: wireless-ripple-out 3.2s ease-out infinite;
   }
   .wireless-ripple .ripple-ring:nth-child(2) {
-    animation-delay: 0.8s;
+    animation-delay: 1.05s;
   }
   .wireless-ripple .ripple-ring:nth-child(3) {
-    animation-delay: 1.6s;
+    animation-delay: 2.1s;
   }
   .wireless-ripple:hover .ripple-ring {
-    animation-duration: 1.2s;
+    animation-duration: 1.8s;
   }
   @keyframes wireless-ripple-out {
     0% {
       transform: translate(-50%, -50%) scale(0.3);
-      opacity: 0.8;
+      opacity: 0.85;
+    }
+    70% {
+      opacity: 0.25;
     }
     100% {
-      transform: translate(-50%, -50%) scale(2);
+      transform: translate(-50%, -50%) scale(5);
       opacity: 0;
     }
   }
