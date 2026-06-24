@@ -51,8 +51,8 @@ latest_posts:
      center dot pinned to the exact top-right corner of the profile photo. */
   .wireless-ripple {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 15px;
+    right: 15px;
     width: 380px;
     height: 380px;
     transform: translate(50%, -50%); /* center dot lands exactly on the corner */
