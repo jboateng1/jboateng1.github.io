@@ -40,7 +40,7 @@
 @use "typograms";
 
 /* ===========================================================================
-   Personal customizations — ISU Cardinal & Gold palette + Inter typography.
+   Personal customizations — ISU Cardinal & Gold palette + IBM Plex typography.
    (loads after tailwind.css, so these win.)
    =========================================================================== */
 
@@ -51,9 +51,15 @@ html[data-theme="dark"] {
   --global-highlight-color: #f1be48;
 }
 
-/* Single, uniform type family across the whole site (headings inherit this). */
+/* IBM Plex type family across the whole site (loaded via google_fonts in
+   _config.yml): Sans for body, Serif for headings, Mono for code/labels. */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+  font-family: "IBM Plex Serif", serif;
 }
 
 /* Page/project subtitle: keep it readable at normal body size, not tiny. */

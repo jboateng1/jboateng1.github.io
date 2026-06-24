@@ -12,7 +12,7 @@ profile:
     <p><i class="fa-solid fa-location-dot"></i> 391C Durham Center</p>
     <p>613 Morrill Road, Ames, IA 50011</p>
     <p><i class="fa-solid fa-flask"></i> Center for Wireless, Communities &amp; Innovation (<a href='https://wici.iastate.edu/'>WiCI</a>)</p>
-    <div class="wireless-ripple" title="Wireless signal" aria-label="Wireless signal"><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-ring"></span><span class="ripple-dot"></span></div>
+    <div class="wireless-ripple" aria-hidden="true"><svg viewBox="0 0 600 600"><g fill="none" stroke="#C8102E" stroke-width="1.4"><circle class="sig" cx="300" cy="300" r="70" style="animation-delay:0s;"></circle><circle class="sig" cx="300" cy="300" r="130" style="animation-delay:.5s;"></circle><circle class="sig" cx="300" cy="300" r="195" style="animation-delay:1s;"></circle><circle class="sig" cx="300" cy="300" r="265" style="animation-delay:1.5s;"></circle></g><circle cx="300" cy="300" r="6" fill="#C8102E"></circle></svg></div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -38,7 +38,7 @@ latest_posts:
   }
 
   /* Make the profile block a positioning context, and lift the photo above
-     the ripple rings so they appear to radiate from behind the image. */
+     the signal rings so they appear to radiate from behind the image. */
   .profile {
     position: relative;
   }
@@ -47,75 +47,46 @@ latest_posts:
     z-index: 2;
   }
 
-  /* Interactive wireless-signal ripple whose center dot sits on the exact
-     top-right corner of the profile photo. Multiple thin rings expand
-     outward from behind the image at once. */
+  /* Wireless "signal" motif from the design: thin concentric rings + a solid
+     center dot pinned to the exact top-right corner of the profile photo. */
   .wireless-ripple {
     position: absolute;
     top: 0;
     right: 0;
+    width: 300px;
+    height: 300px;
     transform: translate(50%, -50%); /* center dot lands on the corner */
     z-index: 1; /* sits behind the photo (z-index: 2) */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
+    pointer-events: none;
   }
-  .wireless-ripple .ripple-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--global-theme-color);
-    transition: transform 0.3s ease;
+  .wireless-ripple svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
   }
-  .wireless-ripple:hover .ripple-dot {
-    transform: scale(1.25);
+  .wireless-ripple .sig {
+    transform-origin: 300px 300px;
+    animation: signalPulse 5.5s ease-out infinite alternate;
   }
-  .wireless-ripple .ripple-ring {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 16px;
-    height: 16px;
-    border: 1px solid var(--global-theme-color);
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0.3);
-    opacity: 0;
-    animation: wireless-ripple-out 4s linear infinite;
+  /* Hovering the photo gives the rings an interactive lift. */
+  .profile:hover .wireless-ripple .sig {
+    animation-duration: 3s;
   }
-  .wireless-ripple .ripple-ring:nth-child(2) {
-    animation-delay: 0.8s;
-  }
-  .wireless-ripple .ripple-ring:nth-child(3) {
-    animation-delay: 1.6s;
-  }
-  .wireless-ripple .ripple-ring:nth-child(4) {
-    animation-delay: 2.4s;
-  }
-  .wireless-ripple .ripple-ring:nth-child(5) {
-    animation-delay: 3.2s;
-  }
-  .wireless-ripple:hover .ripple-ring {
-    animation-duration: 2.4s;
-  }
-  @keyframes wireless-ripple-out {
+  @keyframes signalPulse {
     0% {
-      transform: translate(-50%, -50%) scale(0.3);
-      opacity: 0.9;
-    }
-    80% {
-      opacity: 0.2;
+      opacity: 0.28;
+      transform: scale(0.96);
     }
     100% {
-      transform: translate(-50%, -50%) scale(16);
-      opacity: 0;
+      opacity: 0.06;
+      transform: scale(1.18);
     }
   }
   @media (prefers-reduced-motion: reduce) {
-    .wireless-ripple .ripple-ring {
+    .wireless-ripple .sig {
       animation: none;
+      opacity: 0.18;
     }
   }
 </style>
