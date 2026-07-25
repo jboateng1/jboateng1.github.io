@@ -106,6 +106,15 @@ nav_order: 6
   <span class="tpc-year">2026</span>
 </div>
 
+<div class="tpc-card mb-5">
+  <i class="fa-solid fa-network-wired tpc-icon"></i>
+  <div>
+    <div class="tpc-role">TPC Member</div>
+    <div class="tpc-venue">IEEE Military Communications Conference (MILCOM Demos)</div>
+  </div>
+  <span class="tpc-year">2026</span>
+</div>
+
 <h5 class="svc-section-title"><i class="fa-solid fa-file-pen"></i>&nbsp; Peer Review</h5>
 
 <div class="venue-grid">
