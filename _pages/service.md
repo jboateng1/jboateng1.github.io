@@ -133,6 +133,11 @@ nav_order: 6
     <div class="vb-name">IEEE Conference on Computer Communications</div>
     <div class="vb-years">2022 – 2025</div>
   </div>
+    <div class="venue-badge">
+    <div class="vb-acronym">WiNTECH</div>
+    <div class="vb-name">ACM Workshop on Wireless Network Testbeds, Experimental Evaluation &amp; Characterization</div>
+    <div class="vb-years">2026</div>
+  </div>
   <div class="venue-badge">
     <div class="vb-acronym">MILCOM</div>
     <div class="vb-name">IEEE Military Communications Conference</div>
