@@ -127,6 +127,6 @@ nav_order: 6
   <div class="venue-badge">
     <div class="vb-acronym">MILCOM</div>
     <div class="vb-name">IEEE Military Communications Conference</div>
-    <div class="vb-years">2025</div>
+    <div class="vb-years">2025 - 2026</div>
   </div>
 </div>
