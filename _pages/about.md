@@ -129,7 +129,7 @@ My long-term vision is to make next-generation wireless innovation accessible, a
 <div class="row text-center g-3 mb-3">
   <div class="col-6 col-md-3">
     <div class="p-3 rounded shadow-sm h-100" style="background: var(--global-card-bg-color);">
-      <div style="font-size: 1.6rem; font-weight: 700; color: var(--global-theme-color);">3&times;</div>
+      <div style="font-size: 1.6rem; font-weight: 700; color: var(--global-theme-color);">4&times;</div>
       <div style="font-size: 0.85rem; opacity: 0.85;">Best Paper / Demo Awards</div>
     </div>
   </div>

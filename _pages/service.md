@@ -101,6 +101,15 @@ nav_order: 6
   <i class="fa-solid fa-network-wired tpc-icon"></i>
   <div>
     <div class="tpc-role">TPC Member</div>
+    <div class="tpc-venue">Workshop on Open Research Infrastructures and Toolkits for 6G (OpenRIT6G) @ IEEE WCNC</div>
+  </div>
+  <span class="tpc-year">2027</span>
+</div>
+
+<div class="tpc-card mb-5">
+  <i class="fa-solid fa-network-wired tpc-icon"></i>
+  <div>
+    <div class="tpc-role">TPC Member</div>
     <div class="tpc-venue">ACM Workshop on Wireless Network Testbeds, Experimental Evaluation &amp; Characterization (WiNTECH)</div>
   </div>
   <span class="tpc-year">2026</span>
@@ -118,6 +127,11 @@ nav_order: 6
 <h5 class="svc-section-title"><i class="fa-solid fa-file-pen"></i>&nbsp; Peer Review</h5>
 
 <div class="venue-grid">
+  <div class="venue-badge">
+    <div class="vb-acronym">Access</div>
+    <div class="vb-name">IEEE Access</div>
+    <div class="vb-years">2026</div>
+  </div>
   <div class="venue-badge">
     <div class="vb-acronym">JCN</div>
     <div class="vb-name">Journal of Communications and Networks</div>

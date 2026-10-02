@@ -12,6 +12,19 @@ nav_order: 4
   <div class="col-12">
     <div class="p-4 rounded shadow-sm" style="background: linear-gradient(135deg, rgba(212, 160, 23, 0.08), rgba(212, 160, 23, 0.02)); border-left: 4px solid #d4a017;">
       <div class="d-flex align-items-start">
+        <i class="fa-solid fa-medal fa-2x me-3" style="color: #d4a017;"></i>
+        <div>
+          <h5 class="mb-1">Best Demo Award</h5>
+          <p class="mb-1"><strong>Midscale Experimental Research Infrastructure Forum (MERIF 2026)</strong></p>
+          <p class="mb-0" style="opacity: 0.85;">The George Washington University, Washington, DC, USA &middot; September 2026 &middot; for <em>At-Scale, Real-World Physical AI for Precision Agriculture on the ARA Wireless Living Lab</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="p-4 rounded shadow-sm" style="background: linear-gradient(135deg, rgba(212, 160, 23, 0.08), rgba(212, 160, 23, 0.02)); border-left: 4px solid #d4a017;">
+      <div class="d-flex align-items-start">
         <i class="fa-solid fa-trophy fa-2x me-3" style="color: #d4a017;"></i>
         <div>
           <h5 class="mb-1">Best Paper Award</h5>
@@ -55,6 +68,13 @@ nav_order: 4
 <h3><i class="fa-solid fa-graduation-cap" style="color: var(--global-theme-color);"></i>&nbsp; Scholarships &amp; Distinctions</h3>
 
 <div class="row g-3 mt-2">
+
+  <div class="col-md-6">
+    <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
+      <h6><i class="fa-solid fa-plane-departure"></i>&nbsp; MERIF 2026 Travel Grant</h6>
+      <p class="mb-0" style="font-size: 0.9rem; opacity: 0.85;">Midscale Experimental Research Infrastructure Forum &middot; Washington, DC &middot; August 2026</p>
+    </div>
+  </div>
 
   <div class="col-md-6">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
