@@ -163,10 +163,10 @@
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
   <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Elsevier}</span><span class="p">,</span>
   <span class="na">issn</span> <span class="p">=</span> <span class="s">{2542-6605}</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <script src="/assets/js/more-authors-fix.js"></script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joshua Ofori Boateng. Last updated: July 25, 2026.  ·  <span class="visit-counter" title="Total page views (GoatCounter)" style="color: var(--global-footer-text-color);"> <i class="fa-solid fa-eye"></i> <span id="visit-count" style="color: inherit; font: inherit;">0</span> visits </span> </div> </footer> <script data-goatcounter="https://jboateng1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> <script>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <script src="/assets/js/more-authors-fix.js"></script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joshua Ofori Boateng. Last updated: October 02, 2026.  ·  <span class="visit-counter" title="Total page views (GoatCounter)" style="color: var(--global-footer-text-color);"> <i class="fa-solid fa-eye"></i> <span id="visit-count" style="color: inherit; font: inherit;">0</span> visits </span> </div> </footer> <script data-goatcounter="https://jboateng1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> <script>
   document.addEventListener('DOMContentLoaded', function () {
     var base = 'https://jboateng1.goatcounter.com/counter/';
-    var paths = ["/404.html","/","/awards/","/cv/","/_pages/dropdown/","/news/","/plugins/","/people/","/projects/","/publications/","/repositories/","/service/","/blog/2022/","/blog/2024/","/blog/tag/medium/","/blog/tag/google/","/blog/category/jekyll/","/blog/category/jekyll-themes/","/blog/category/personal-blog/","/blog/category/blog/","/blog/category/academic/","/blog/category/external-posts/","/blog/index.html","/projects/1_ara/","/projects/2_ara_nrdz/","/projects/3_accord/",];
+    var paths = ["/404.html","/","/awards/","/cv/","/_pages/dropdown/","/news/","/plugins/","/people/","/projects/","/publications/","/repositories/","/service/","/blog/2022/","/blog/2024/","/blog/tag/medium/","/blog/tag/google/","/blog/category/jekyll/","/blog/category/jekyll-themes/","/blog/category/personal-blog/","/blog/category/blog/","/blog/category/academic/","/blog/category/external-posts/","/blog/index.html","/projects/1_ara/","/projects/2_ara_nrdz/","/projects/3_accord/","/projects/4_agslicing/",];
     Promise.all(
       paths.map(function (p) {
         return fetch(base + encodeURIComponent(p) + '.json')
@@ -279,6 +279,18 @@ ninja.data = [{
           section: "News",},{id: "news-joining-the-department-of-electrical-and-computer-engineering-and-wici-at-iowa-state-university-as-a-research-assistant-professor-effective-july-1-2026",
           title: ' Joining the Department of Electrical and Computer Engineering and WiCI at Iowa State...',
           description: "",
+          section: "News",},{id: "news-awarded-a-travel-grant-to-attend-merif-2026-midscale-experimental-research-infrastructure-forum-at-the-george-washington-university-washington-dc",
+          title: ' Awarded a travel grant to attend MERIF 2026 (Midscale Experimental Research Infrastructure Forum)...',
+          description: "",
+          section: "News",},{id: "news-new-nsf-award-our-multi-institution-project-agslicing-predictable-ran-and-spectrum-slicing-for-precision-agriculture-has-been-funded-by-the-nsf-vines-track-2-program-award-2554530-in-collaboration-with-the-university-of-virginia-skylark-wireless-salin-247-and-federated-wireless",
+          title: ' New NSF award! Our multi-institution project AgSlicing: Predictable RAN and Spectrum Slicing for...',
+          description: "",
+          section: "News",},{id: "news-attended-the-nsf-pawr-pi-meeting-at-the-george-washington-university-washington-dc",
+          title: ' Attended the NSF PAWR PI Meeting at The George Washington University, Washington, DC....',
+          description: "",
+          section: "News",},{id: "news-best-demo-award-at-merif-2026-washington-dc-for-at-scale-real-world-physical-ai-for-precision-agriculture-on-the-ara-wireless-living-lab-a-live-ocudu-5g-drone-edge-ai-weed-detection-demo-with-kaiair-our-second-merif-best-demo-after-2024",
+          title: ' Best Demo Award at MERIF 2026 (Washington, DC) for At-Scale, Real-World Physical AI...',
+          description: "",
           section: "News",},{id: "projects-ara-wireless-living-lab",
           title: 'ARA Wireless Living Lab',
           description: "NSF PAWR — an at-scale rural wireless living lab spanning central Iowa",
@@ -294,6 +306,11 @@ ninja.data = [{
           description: "NTIA-funded center for Open RAN testing, interoperability, and commercialization",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_accord/";
+            },},{id: "projects-agslicing",
+          title: 'AgSlicing',
+          description: "NSF VINES Track 2 — predictable RAN and spectrum slicing for precision agriculture",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_agslicing/";
             },},{
         id: 'social-cv',
         title: 'CV',
