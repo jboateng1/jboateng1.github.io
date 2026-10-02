@@ -2,7 +2,7 @@
 layout: page
 title: AgSlicing
 description: NSF VINES Track 2 — predictable RAN and spectrum slicing for precision agriculture
-img: assets/img/agslicing_logo.png
+img: assets/img/nsf_merif.png
 importance: 1
 category: open ran
 related_publications: false
