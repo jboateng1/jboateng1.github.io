@@ -95,6 +95,8 @@ I am a **Research Assistant Professor** at the Center for Wireless, Communities 
 
 My research focuses on Democratizing 5G/6G systems through open, reliable and scalable wireless infrastructure. Working at the intersection of wireless systems, networked infrastructure, and software engineering. I lead the design and deployment of the [ARA Wireless Living Lab](https://arawireless.org/) — a large-scale, fully programmable Open RAN testbed serving over **170 researchers** across the U.S. In 2024 I spent 6 months at **Microsoft Research** building a GEO-based 5G non-terrestrial network testbed.
 
+Today, I am building **hardware-accelerated (e.g., GPU-based) AI-RAN** on ARA with the Linux Foundation's [OCUDU](https://ocudu.org) and [NVIDIA Aerial](https://developer.nvidia.com/aerial-cuda-accelerated-ran), and I co-designed the [KaiAir](https://github.com/ICICLE-ai/kaiair) interference-control and real-time scheduling algorithms as an open-source contribution to OCUDU. I represent Iowa State in the [AI-RAN Alliance](https://ai-ran.org) (WG2: AI-and-RAN) and in the OCUDU Technical Steering Committee's AI-RAN and Hardware-Acceleration working groups.
+
 My long-term vision is to make next-generation wireless innovation accessible, affordable, and deployable for rural, agricultural, and underserved communities, across Iowa, the broader Midwest and the United States as a whole.
 
 <hr style="margin: 2rem 0;">
@@ -102,19 +104,25 @@ My long-term vision is to make next-generation wireless innovation accessible, a
 <h4 style="margin-bottom: 1rem;"><i class="fa-solid fa-flask-vial" style="color: var(--global-theme-color);"></i>&nbsp; Research Interests</h4>
 
 <div class="row g-3 mb-3">
-  <div class="col-md-4">
+  <div class="col-md-6">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
-      <h6><i class="fa-solid fa-tower-cell"></i>&nbsp; Open, Programmable &amp; AI-native RAN</h6>
-      <p class="mb-0">Open-source 5G/6G stacks (OCUDU, OAI), software-defined and intelligent RAN control, multi-tenant infrastructure.</p>
+      <h6><i class="fa-solid fa-tower-cell"></i>&nbsp; Open, Programmable &amp; Intelligent RAN</h6>
+      <p class="mb-0">Open-source 5G/6G stacks (OCUDU, Duranta/OAI), software-defined and intelligent RAN control, spectrum slicing, multi-tenant SDR infrastructure.</p>
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-6">
+    <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
+      <h6><i class="fa-solid fa-microchip"></i>&nbsp; AI-RAN &amp; Hardware-Accelerated RAN</h6>
+      <p class="mb-0">CUDA-accelerated physical layer (OCUDU, NVIDIA Aerial) and co-location of AI/ML and RAN workloads on shared accelerated infrastructure.</p>
+    </div>
+  </div>
+  <div class="col-md-6">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
       <h6><i class="fa-solid fa-satellite-dish"></i>&nbsp; Wireless Testbeds &amp; Living Labs</h6>
       <p class="mb-0">Large-scale experimental 5G/6G platforms, real-world open RAN prototyping, reproducible wireless experimentation.</p>
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-6">
     <div class="p-3 h-100 rounded shadow-sm" style="background: var(--global-card-bg-color); border-left: 3px solid var(--global-theme-color);">
       <h6><i class="fa-solid fa-bolt"></i>&nbsp; URLLC &amp; Deterministic Wireless</h6>
       <p class="mb-0">Measurement-driven latency modeling, system-level tuning for predictable low-latency 5G/6G, precision agriculture.</p>
